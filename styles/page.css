@@ -59,12 +59,14 @@ div.section {
 }
 
 .text-img {
-	
-	position: relative; left:25%; 
-	margin-top:-22%;
+	position: fixed; left:55%; top: 30%; 
+	/*margin-top:-22%;*/
 	border-radius:90%;
 	border:solid;
 	border-color:#000000;
+
+	width: 35%;
+	height: 35%;
 }
 
 .title {
