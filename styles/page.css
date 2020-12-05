@@ -18,8 +18,8 @@ div#screen {
 div#header {
 	width:auto;
 	margin-top:1%;
-	margin-left:35% !important;
-	margin-right:35% !important;
+	margin-left:35%;
+	margin-right:35%;
 	text-align: center;
 	padding: 20px;
 	
@@ -58,9 +58,10 @@ div.section {
 	color: black;
 }
 
-img.text-img {
+.text-img {
 	
-	position: fixed; left:55%; bottom: 30%;
+	position: relative; left:25%; 
+	margin-top:-22%;
 	border-radius:90%;
 	border:solid;
 	border-color:#000000;
@@ -106,7 +107,8 @@ p.auto {
 
 /*generic tags*/
 body {
-	background-image: url("/imgs/news_collage_blurry.jpg"); 
+	background-image: url("\\FlaskProject\\imgs\\news_collage_blurry.jpg") 
+
 }
 html {
 	
