@@ -1,0 +1,115 @@
+/*stylesheet for citations page*/
+
+/*div ids*/
+div#navbar {
+	height: 50px;
+	background: #FFFFFF;
+	font-family: "Bookman", serif;
+	color: #000000 !important;
+	margin-top:0px;
+
+}
+div#wrap {
+
+}
+div#screen {
+}
+
+div#header {
+	width:auto;
+	margin-top:1%;
+	margin-left:35% !important;
+	margin-right:35% !important;
+	text-align: center;
+	padding: 20px;
+	
+}
+
+div#outer {
+	width:auto;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+div#borders {
+}
+/*
+div#footer {
+	width:auto;
+}
+/*
+
+/*div classes*/
+div.section {
+	margin:1%;
+	text-align: center;
+	padding: 2.5%;
+	background-color: #FFFFFF;
+	background: #FFFFFF;
+	border-style: solid;
+	border-color: #000000;
+	box-shadow: 10px 15px;
+
+
+}
+
+/*classes*/
+.navbar a{
+	color: black;
+}
+
+img.text-img {
+	
+	position: fixed; left:55%; bottom: 30%;
+	border-radius:90%;
+	border:solid;
+	border-color:#000000;
+}
+
+.title {
+	width:auto;
+	padding:1%;
+	background: #FFFFFF;
+	border: solid;
+	border-color: #000000;
+	font-family: "Algerian" , serif;
+	font-size: 60px;
+	color: #000000;
+}
+
+.subtitle {
+	margin-top:-20px;
+	padding: 0px;
+	width: auto;
+	position: relative; left:-25%; 
+	text-align: 10px;
+	/*text-decoration: underline overline;*/
+
+
+	font:#000000;
+	font-family: "Bookman" , serif;
+	font-size: 50px;
+	color: #000000;
+}
+p.auto {
+	width:50%;
+	margin: left; /*centers element*/
+	padding: 1%;
+	text-align: center;
+	background: #f7f7f7; 
+	border-style: outset;
+	border-color: #bfbfbf;
+	font-family: "Trebuchet MS" , serif;
+	font-size: 16px;
+	color: #000000;
+}
+
+/*generic tags*/
+body {
+	background-image: url("\\FlaskProject\\imgs\\news_collage_blurry.jpg"); 
+
+}
+html {
+	
+}
+

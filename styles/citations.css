@@ -1,0 +1,96 @@
+/*stylesheet for citations page*/
+
+/*div ids*/
+div#navbar {
+	height: 50px;
+	background: #FFFFFF;
+	font-family: "Bookman", serif;
+	color: #000000 !important;
+	margin-top:0px;
+}
+div#wrap {
+}
+div#screen {	
+}
+
+div#header {
+	width:auto;
+	margin-top:1%;
+	margin-left:35%;
+	margin-right:35%;
+	text-align: center;
+	padding: 20px;
+}
+
+div#outer {
+}
+
+div#borders {
+}
+/*
+div#footer {
+	width:auto;
+}
+/*
+
+/*div classes*/
+div.biblio {
+	width:auto;
+	margin-left:25% !important;
+	margin-right:25% !important;
+	margin:1%;
+	text-align: center;
+	padding: 2%;
+	background-color: #FFFFFF;
+	background: #FFFFFF;
+	border: solid;
+	border-color: #000000;
+}
+
+/*classes*/
+.navbar a{
+	color: black;
+}
+
+.title {
+	width:auto;
+	padding:20px;
+	background: #FFFFFF;
+	border: solid;
+	border-color: #000000;
+	font-family: "Algerian" , serif;
+	font-size: 60px;
+	color: #000000;
+}
+
+.subtitle {
+	margin-top:-20px;
+	padding: 0px;
+	width: auto;
+	font:#000000;
+	font-family: "Bookman" , serif;
+	font-size: 32px;
+	color: #000000;
+}
+.bib-entry {
+	width:75%;
+	margin: auto; /*centers element*/
+	padding: 1%;
+	text-align: center;
+	background: #e6e6e6; 
+	border-style: outset;
+	border-color: #bfbfbf;
+	font-family: "Trebuchet MS" , serif;
+	font-size: 16px;
+	color: #000000;
+}
+
+/*generic tags*/
+body {
+	background-image: url("\\FlaskProject\\imgs\\news_collage_blurry.jpg") 
+
+}
+html {
+	
+}
+

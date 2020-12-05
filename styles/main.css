@@ -1,0 +1,95 @@
+/*stylesheet for index*/
+
+/*div ids*/
+div#navbar {
+	background: #FFFFFF;
+	font-family: "Bookman", serif;
+	color: black !important;
+
+}
+div#wrap {
+	width: auto;
+	background: #FFFFFF;
+}
+div#screen{
+	background: #FFFFFF;
+	color:white;
+}
+div#header{
+	background: #FFFFFF;
+	margin-top:-10%;	
+}
+div#main{
+	width:100%;
+	top: 50px;
+	text-align: center;
+	background: #FFFFFF;
+	color:black;
+}
+div#sidebar {
+	/*
+	height: 75%;
+	width: 10%;
+	position: fixed;
+	z-index: 1; 
+	top: 55%; 
+	right: 5%;	
+	overflow-x: hidden;
+	padding-top: 20px;
+	border:20px;
+	border-color: black;
+	background: #66666B;
+	font-family: "Cornerstone", serif;
+	color:white;
+	*/
+}
+
+
+/*div classes*/
+
+
+
+/*ids*/
+img#img-title {
+	display: inline-block;
+	width: 100%;
+	height: 10%;
+}
+
+/*classes*/
+.navbar a{
+	color: black;
+}
+
+
+.subtitle {
+	font-family: "Bookman" , serif;
+	font-size: 36px;
+	color: #000066;
+	width: auto;
+}
+
+
+.title {
+	width:auto;
+	font-family: "Bookman" , serif;
+	font-size: 60px;
+	color: #000000;
+}
+
+p.auto {
+	width:auto;
+	margin: 20px;
+	padding: 10px;
+	background: #FFFFFF;
+	font:#000000;
+	font-size: 18px;
+}
+
+/*generics*/
+body {
+	
+}
+html {
+	
+}
