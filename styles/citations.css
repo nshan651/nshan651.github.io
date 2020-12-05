@@ -87,8 +87,7 @@ div.biblio {
 
 /*generic tags*/
 body {
-	background-image: url("\\FlaskProject\\imgs\\news_collage_blurry.jpg") 
-
+	background-image: url("/imgs/news_collage_blurry.jpg"); 
 }
 html {
 	
