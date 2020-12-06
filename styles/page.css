@@ -41,9 +41,10 @@ div#footer {
 
 /*div classes*/
 div.section {
-	margin:1%;
+	margin:10%;
+	position: relative;
 	text-align: center;
-	padding: 2.5%;
+	padding: 3%;
 	background-color: #FFFFFF;
 	background: #FFFFFF;
 	border-style: solid;
@@ -57,17 +58,47 @@ div.section {
 .navbar a{
 	color: black;
 }
+img.text-img-rect1 {
+	position: absolute; left:52%; bottom: 50%;
+	border:solid;
+	border-color:#000000;
+	width: 25%;
+	height: 30%;
+	z-index:1;
 
-.text-img {
-	position: fixed; left:55%; top: 30%; 
-	/*margin-top:-22%;*/
+}
+img.text-img-rect2 {
+	position: absolute; left:70%; bottom: 20%;
+	/*margin-top:-18%;*/
+	border:solid;
+	border-color:#000000;
+	width: 25%;
+	height: 30%;
+	z-index:2;
+}
+
+img.text-img-rect3 {
+	position: absolute; left:53%; bottom: 28%;
+	/*margin-top:-18%;*/
+	border:solid;
+	border-color:#000000;
+	width: 45%;
+	height: 45%;
+	z-index:2;
+}
+
+
+
+img.text-img-round {
+	position: absolute; left:53%; bottom: 35%; 
+	/*margin-top:-50%;*/
 	border-radius:90%;
 	border:solid;
 	border-color:#000000;
-
-	width: 35%;
-	height: 35%;
+	width: 40%;
+	height: 45%;
 }
+
 
 .title {
 	width:auto;
@@ -81,8 +112,8 @@ div.section {
 }
 
 .subtitle {
-	margin-top:-20px;
-	padding: 0px;
+	margin-top:5px;
+	padding: 0%;
 	width: auto;
 	position: relative; left:-25%; 
 	text-align: 10px;
@@ -91,25 +122,31 @@ div.section {
 
 	font:#000000;
 	font-family: "Bookman" , serif;
-	font-size: 50px;
+	font-size: 38px;
 	color: #000000;
 }
 p.auto {
 	width:50%;
 	margin: left; /*centers element*/
 	padding: 1%;
-	text-align: center;
+	margin-bottom: 5%;
+	text-align: left;
 	background: #f7f7f7; 
 	border-style: outset;
 	border-color: #bfbfbf;
 	font-family: "Trebuchet MS" , serif;
-	font-size: 16px;
+	font-size: 20px;
 	color: #000000;
+}
+
+.small-text {
+	font-size: 14px;
+	font-family: "Trebuchet MS" , serif;
 }
 
 /*generic tags*/
 body {
-	background-image: url("\\FlaskProject\\imgs\\news_collage_blurry.jpg") 
+	background-image: url("/imgs/news_collage_blurry.jpg");
 
 }
 html {

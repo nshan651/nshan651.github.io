@@ -27,11 +27,6 @@ div#outer {
 
 div#borders {
 }
-/*
-div#footer {
-	width:auto;
-}
-/*
 
 /*div classes*/
 div.biblio {
@@ -84,6 +79,8 @@ div.biblio {
 	font-size: 16px;
 	color: #000000;
 }
+
+/*generic tags*/
 
 /*generic tags*/
 body {
