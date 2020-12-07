@@ -81,10 +81,9 @@ div.biblio {
 }
 
 /*generic tags*/
-
-/*generic tags*/
 body {
-	background-image: url("/imgs/news_collage_blurry.jpg"); 
+	background-image: url("/imgs/news_collage_blurry.jpg");") 
+
 }
 html {
 	
