@@ -50,8 +50,6 @@ div.section {
 	border-style: solid;
 	border-color: #000000;
 	box-shadow: 10px 15px;
-
-
 }
 
 /*classes*/
@@ -82,16 +80,69 @@ img.text-img-rect3 {
 	/*margin-top:-18%;*/
 	border:solid;
 	border-color:#000000;
-	width: 45%;
+	width: 40%;
 	height: 45%;
 	z-index:2;
+}
+
+img.text-img-square {
+	position: absolute; left:55%; bottom: 20%;
+	
+	border:solid;
+	border-color:#000000;
+	width: 35%;
+	height: 60%;
+	
+}
+
+img.text-img-portrait {
+	position: absolute; left:52%; bottom: 52%;
+	border:solid;
+	border-color:#000000;
+	width: 20%;
+	height: 40%;
+	z-index:1;
+}
+
+img.text-img-portrait2 {
+	position: absolute; left:75%; bottom: 20%;
+	border:solid;
+	border-color:#000000;
+	width: 20%;
+	height: 40%;
+	z-index:1;
+}
+
+img.text-img-portrait3 {
+	position: absolute; left:60%; bottom: 5%;
+	border:solid;
+	border-color:#000000;
+	width: 25%;
+	height: 90%;
+	z-index:1;
+}
+img.text-img-portrait4 {
+	position: absolute; left:52%; bottom: 12%;
+	border:solid;
+	border-color:#000000;
+	width: 45%;
+	height: 75%;
+	z-index:1;
+}
+
+img.text-img-altround {
+	position: absolute; left:55%; bottom: 30%; 
+	border-radius:90%;
+	border:solid;
+	border-color:#000000;
+	width: 30%;
+	height: 45%;
 }
 
 
 
 img.text-img-round {
 	position: absolute; left:53%; bottom: 35%; 
-	/*margin-top:-50%;*/
 	border-radius:90%;
 	border:solid;
 	border-color:#000000;
@@ -118,8 +169,18 @@ img.text-img-round {
 	position: relative; left:-25%; 
 	text-align: 10px;
 	/*text-decoration: underline overline;*/
-
-
+	font:#000000;
+	font-family: "Bookman" , serif;
+	font-size: 38px;
+	color: #000000;
+}
+.subtitle-no-pic {
+	margin-top:5px;
+	padding: 0%;
+	width: auto;
+	/*position: relative; left:-25%;*/
+	text-align: center;
+	/*text-decoration: underline overline;*/
 	font:#000000;
 	font-family: "Bookman" , serif;
 	font-size: 38px;
@@ -138,6 +199,21 @@ p.auto {
 	font-size: 20px;
 	color: #000000;
 }
+
+p.no-pic {
+	width:auto;
+	margin: center; /*centers element*/
+	padding: 1%;
+	margin-bottom: 5%;
+	text-align: left;
+	background: #f7f7f7; 
+	border-style: outset;
+	border-color: #bfbfbf;
+	font-family: "Trebuchet MS" , serif;
+	font-size: 20px;
+	color: #000000;
+}
+
 
 .small-text {
 	font-size: 14px;
