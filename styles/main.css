@@ -17,13 +17,12 @@ div#screen{
 }
 div#header{
 /*stylesheet for index*/
-
+}
 /*div ids*/
 div#navbar {
 	background: #FFFFFF;
 	font-family: "Bookman", serif;
 	color: black !important;
-
 }
 div#wrap {
 	width: auto;
