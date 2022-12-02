@@ -1,0 +1,17 @@
+---
+title: "How Do You Eat an Elephant"
+date: 2022-12-02T00:25:35-06:00
+draft: true
+---
+
+This is the phrase that my piano teacher would often repeat to me whenever I began to learn a new piece. "One bite at a time," I would reply. I always knew the answer, but the reminder helped prime me to meet the coming challenge. Instead of looking at a piece of music as a whole, he encouraged me to break it down into its atomic elements. 
+
+Start from left to right, top to bottom. What does the tempo marking say about how the piece should be played? Look at what key it is in. Check the time signature. What do the dynamics tell you about the volume of the piece? If you're sight-reading, take an additional minute or two to run through the piece in your head and "tap it out" with your hands before you start. After all this preparation is done, its finally time to play. A lot of people would be tempted to skip right to playing, but taking even three minutes to think about the details of the composition saves time and effort later on down the line. 
+
+Once I've gotten somewhat familiar with a piece, I like to continue my philosophy of "one bite at a time" by sectioning off different phrases. For those who didn't know, a phrase in music theory is like a self contained thought that has a "musical sense of its own." [1](https://en.m.wikipedia.org/wiki/Phrase) This method of compartmentalization reveals a lot about a song's underlying structure. You'll often find that certain phrases share ideas or even repeat.
+
+If it wasn't already obvious, I'm not even close to a professional musician. This is not meant to be taken as musical coaching. Rather, I want to show how my piano teacher's "one bite" method can be applied to other disciplines. Take software development. Everyone knows how overwhelming it can feel to learn a new technology or the ins and outs of a codebase. If you find yourself feeling this way, consider how you're eating the elephant. 
+
+First, you probably don't need to understand every single detail right away. Focus only on what you need to know, and the rest will come later. Next, look for patterns. There are often similar "phrases" present throughout a codebase that make the familiarization process much easier. Likewise, it can be useful to compare a new programming language to one you already know. I've been able to pick up Lua fairly quickly because of my existing familiarity with Python. Both languages are dynamically typed and share similar syntax. Because of this, I was able to focus on the aspects of Lua that were new to me, such as tables (Lua's single data structure), metatables, and its ability to easily interface with C/C++. Finally, pay attention to the negative space, i.e. what is *not*. Rests in music have their own corresponding symbols that show when not to play something. It's natural to think of notes first and to fill in the rests afterward, but organized and intentional silence is a critical part of musical expression. At first it may seem unintuitive when it comes to software development, but having a good understanding of what your program is and is not capable of allows you to intentionally leave intentional pauses. I'd liken this to the Unix philosophy of designing simple, easily-combinable programs that allow the liminal spaces to be filled in by others. One could even think of Unix program like `cat` or `grep` as musical phrases, self-contained ideas that can be expanded to form a song greater than the sum of its parts.
+
+
