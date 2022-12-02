@@ -18,16 +18,15 @@ header h1 {
 }
 
 footer {
-	 max-width: 900px;
+	 /*max-width: 900px;*/
      margin-top: 25px ;
 	 text-align: center ;
      border-radius: 25px;
      border: 2px solid #596763;
-     width: 900px;
+     width: 100%;
      padding: 25px;
      min-height: 25px;
-     margin-left: -100px;
-     position: absolute;
+     /*position: absolute;*/
 }
 
 /* Links */
@@ -48,11 +47,12 @@ a {
 .fzfborder {
      border-radius: 25px;
      border: 2px solid #596763;
-     width: 900px;
+     /*width: 900px;*/
+     width: 100%;
      margin-top: 25px;
      padding: 25px;
      min-height: 800px;
-     margin-left: -100px;
+     /*margin-left: -100px;*/
 }
 /* Nav */
 .menubar {
@@ -60,7 +60,8 @@ a {
     margin: 0px;
     zoom:1;
     padding: 0px;
-    width: 800px;
+    /*width: 800px;*/
+    width: 100%;
 }
 
 .menubar li a {
@@ -74,16 +75,17 @@ a {
 	/* color: #faedcd; */
 	color: #bdc3af;
 
-    margin-left: -165px;
+    margin-left: -10%;
     font-size: 30pt ;
 }
 
 nav {
-    margin-left: auto;
+    /*margin-left: auto;*/
+    margin-left: 18%;
     margin-right: auto;
     font-size: large;
     text-align: center;
-    width: 1000px;
+    width: 100%;
 }
 
 .menubar li {
@@ -99,7 +101,6 @@ nav {
 }
 
 .menubar li:hover {
-    /* background: #000; */
     background: #2f383e;
 }
 
@@ -132,7 +133,6 @@ nav {
 	text-align: center ;
 	clear: both ;
 }
-
 
 /* For NEXTPREV.HTML; The container for both the previous and next articles. */
 #nextprev {
