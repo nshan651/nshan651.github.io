@@ -156,12 +156,75 @@ Additional comments about closing:  We&amp;rsquo;ve been using master for 15 yea
 	</item>
 	
 	<item>
-		<title>First Post</title>
-		<link>http://nshan.is/posts/first-post/</link>
-		<pubDate>Wed, 09 Nov 2022 20:12:27 -0600</pubDate>
+		<title>Be a Producer</title>
+		<link>http://nshan.is/posts/be-a-producer/</link>
+		<pubDate>Fri, 02 Dec 2022 00:20:16 -0600</pubDate>
 		
-		<guid>http://nshan.is/posts/first-post/</guid>
-		<description></description>
+		<guid>http://nshan.is/posts/be-a-producer/</guid>
+		<description>&lt;h1 id=&#34;be-a-producer&#34;&gt;Be a Producer&lt;/h1&gt;
+&lt;p&gt;In the age of social media and streaming services, consuming content has never been easier. Corporations have mastered minimizing the friction between you and the next serving of content. Platforms like TikTok remove as much explicit user control as possible, making it so that users can mindlessly scroll while relying on the algorithm to show them what they want to see. Everyone&amp;rsquo;s busy, and it has become so easy to come home from work or school and passively consume. However, the path of least resistance is not always the most rewarding. I want to convince you of something that I&amp;rsquo;ve finally become convinced of myself after having grown up using the internet. &lt;strong&gt;Your voice matters&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;No matter who you are, whether you&amp;rsquo;re a 10x developer at Google or a retired farmer, I guarantee that you have a wealth of unique experiences and knowledge that would benefit others if shared. It doesn&amp;rsquo;t matter whether it&amp;rsquo;s in the form of a guide or personal anecdotes, there are people out there who can derive value from it.&lt;/p&gt;
+&lt;p&gt;This next point might sound painfully obvious, but please just bear with me. &lt;em&gt;Everything you&amp;rsquo;ve learned comes from somewhere&lt;/em&gt;.  It&amp;rsquo;s really easy to think that something you know is obvious and that it isn&amp;rsquo;t worth sharing, but ask yourself how you know it. An electrician&amp;rsquo;s expertise of electrical wiring systems isn&amp;rsquo;t immaculately conceived knowledge. They probably learned through trade school or an apprenticeship. Don&amp;rsquo;t allow yourself to become the tail node in the chain. There are countless people who came before you, and countless others who will follow the same path.&lt;/p&gt;
+&lt;p&gt;The breadth of content out in the world is so vast that the idea of sharing your own art and ideas can seem daunting at first. Here&amp;rsquo;s a list of reasons why I was hesitant to start this, and why you might be as well.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I&amp;rsquo;m not a good writer &lt;!-- raw HTML omitted --&gt;
+I&amp;rsquo;m not either! Finding your voice as a writer takes a lot of time and practice. I&amp;rsquo;m personally not used to this sort of informal writing, but I&amp;rsquo;ve accepted the fact that things might be a little rough starting out. That&amp;rsquo;s okay though - it doesn&amp;rsquo;t invalidate what you have to say.&lt;/li&gt;
+&lt;li&gt;I don&amp;rsquo;t have the time &lt;!-- raw HTML omitted --&gt;
+This is simply not true. What I hear when people say that they don&amp;rsquo;t have time for something is &lt;em&gt;&amp;ldquo;I don&amp;rsquo;t want to make the time.&amp;rdquo;&lt;/em&gt; I don&amp;rsquo;t care how busy you think you are, you can always prioritize what&amp;rsquo;s important to you. Now if blogging isn&amp;rsquo;t important to you, that&amp;rsquo;s totally fair! But I hope this post can convince you of its value. That said, blogging certainly does not need to be a huge time commitment. Not every post needs to be a 6,000 word &lt;em&gt;oeuvre d&amp;rsquo;art&lt;/em&gt;. I wrote this post in an afternoon, but I&amp;rsquo;m still quite proud of it.&lt;/li&gt;
+&lt;li&gt;My ideas aren&amp;rsquo;t worth sharing &lt;!-- raw HTML omitted --&gt;
+I already spoke above about why this is wrong, but allow me to further convince you. Even if not a single other person out of the 7 billion plus people on earth sees or value in your ideas, even if you&amp;rsquo;re essentially screaming into the void, writing out your thoughts still benefits &lt;em&gt;you&lt;/em&gt;. Sitting with an idea and forcing yourself to write about it forces you to process in new and creative ways. It&amp;rsquo;s similar to how explaining a problem to someone else deepens your own understanding of the subject. Effectively explaining a concept requires you to have a rock-solid baseline understanding. For me, I sometimes feel like an &amp;ldquo;expert&amp;rdquo; after reading an article on climate change or a new machine learning technique - until I try to explain it to someone else and fail miserably.&lt;/li&gt;
+&lt;li&gt;Judgement from others &lt;!-- raw HTML omitted --&gt;
+I think this has been one of the hardest hurdles to overcome for me. I tend to worry about what kind of reactions my work will get, but I always try to remember one particularly important piece of advice one of my professors once told me. &lt;em&gt;Take pride in your work&lt;/em&gt;. Run your writing through a spell checker, correct mistakes, pay attention to the details.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As a final piece of advice that I have to remind myself of everyday, &lt;strong&gt;Don&amp;rsquo;t be afraid to make mistakes&lt;/strong&gt;. The only thing you should fear is not making enough mistakes&lt;/p&gt;
+&lt;p&gt;I wanted this to be my first post because I want sharing and information transfer to be a theme of this blog.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Curing my YouTube addiction with yt-dlp</title>
+		<link>http://nshan.is/posts/yt-dlp/</link>
+		<pubDate>Fri, 02 Dec 2022 00:20:16 -0600</pubDate>
+		
+		<guid>http://nshan.is/posts/yt-dlp/</guid>
+		<description>&lt;h1 id=&#34;curing-my-youtube-addiction-with-yt-dlp&#34;&gt;Curing my YouTube addiction with yt-dlp&lt;/h1&gt;
+&lt;h2 id=&#34;2022-11-27&#34;&gt;2022-11-27&lt;/h2&gt;
+&lt;p&gt;Of all the social media sites that I have been moving away from, I find that my YouTube addiction is the hardest to kick. There are so many channels that I really do enjoy and whose content has had a profound impact, whether for their artistry or for their educational value. The creators are great, but lately I&amp;rsquo;ve started to wonder about the platform itself.&lt;/p&gt;
+&lt;p&gt;My main issue is with the algorithm. I&amp;rsquo;m especially susceptible to algorithmic content recommendation, and yet I still find that 95% of what is recommended to me is garbage that doesn&amp;rsquo;t bring me any joy. So why do I still consume content? Here are a couple of reasons:&lt;/p&gt;
+&lt;h4 id=&#34;little-effort-required&#34;&gt;Little effort required&lt;/h4&gt;
+&lt;p&gt;Watching videos is typically a very passive experience. It&amp;rsquo;s easy to throw it on in the background while doing something else like cooking or working. The YouTube algorithm makes it so there is almost no friction in content consumption/discovery.&lt;/p&gt;
+&lt;h4 id=&#34;lack-of-continuity&#34;&gt;Lack of continuity&lt;/h4&gt;
+&lt;p&gt;Videos tend to vary in length, especially depending on the genre of video. I tend to watch a mix of both long-form video essays that are 1-hour plus, and shorter form clips lasting 5-10 minutes. Because different channel can focus on such disparate themes and topics, it can often feel like there is a lack of progression between videos. Episodes of television may stand on their own, but at least there is usually some overarching plot line that the viewer can use to determine progress in a show. Although I didn&amp;rsquo;t grow up watching a lot of TV, I never felt like overconsumption was as tempting. Even in the cases when I binged a show, I was consciously aware of how many episodes I watched based on the evolution of the plot. The differing lengths and lack of progression between videos contributes to a general lack of continuity, and makes it hard to gage exactly how much YouTube I consume.&lt;/p&gt;
+&lt;h4 id=&#34;dopamine&#34;&gt;Dopamine&lt;/h4&gt;
+&lt;p&gt;It&amp;rsquo;s common to associate addiction with with vices like drugs, sex, or gambling. I consider myself fortunate that I haven&amp;rsquo;t personally struggled with any of these addictions, and I don&amp;rsquo;t want to detract from the fact that they can be extremely debilitating. However, I feel that because Internet addiction doesn&amp;rsquo;t have the same social stigma, it makes it difficult to identify it as a problem. There are no laws limiting YouTube use or consumption as there are with the above. Perhaps the other reason it is so hard to recognize is because we are all addicted. We are so dependent on technology that it has become hard to distinguish using it as a tool versus using it self-destructively.&lt;/p&gt;
+&lt;h4 id=&#34;habit&#34;&gt;Habit&lt;/h4&gt;
+&lt;p&gt;The above factors all contribute to the formation of bad habits of unconscious consumption. It has gotten to the point where I&amp;rsquo;ll mindlessly play a video at every possible pause in my day, as if the moment alone with my thoughts is too much to handle. I really value moments of introspection, and the fact that I seem to be afraid of it is really upsetting.&lt;/p&gt;
+&lt;h2 id=&#34;the-solution&#34;&gt;The solution?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Every object, every being,&lt;br&gt;
+is a jar full of delight.&lt;br&gt;
+Be a connoisseur,&lt;br&gt;
+and taste with caution.&lt;br&gt;
+- Rumi, &lt;em&gt;The Many Wines&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;The Many Wines&lt;/em&gt;, by Rumi, is a Sufi poem cautioning others on the perils of pleasure. He compares the world&amp;rsquo;s pleasures to &amp;ldquo;thousands of wines, that can take of our minds.&amp;rdquo; The message is not to completely cut off all desire, but to reduce our interactions with the world to only the things that bring positivity to our lives.&lt;/p&gt;
+&lt;p&gt;Lately I feel like I haven&amp;rsquo;t been a good connoisseur. I&amp;rsquo;ve gotten drunk in my sampling, and I&amp;rsquo;ve stopped making conscious decisions. I need some way to re-empower myself so that I can once again make deliberate choices.&lt;/p&gt;
+&lt;p&gt;My solution is simple: Get off the platform, and consume only the content I want to see. I wrote a Python script using &lt;code&gt;yt-dlp&lt;/code&gt; to download and organize the five most recent videos from the channels that I want to follow. I deleted my YouTube account as well so that there isn&amp;rsquo;t even a possibility to go back to the algorithm.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Download yt sub content en masse using yt-dlp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sub_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/home/nick/Videos/subs.txt&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;r&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; sub &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; sub_list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    name, link &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sub&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;system(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        yt-dlp -f mp4 -I &amp;#34;1:5&amp;#34; &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;link&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; -o &amp;#34;$HOME/Videos/channels/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;name&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/%(upload_date&amp;gt;%Y-%m-%d)s-%(title)s.%(ext)s&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The script is dead-simple. We&amp;rsquo;re looping through a file containing the aliases and links of all the channels I want to follow, then we download the 5 most recent videos and place them inside &lt;code&gt;~/Videos/channels/&lt;/code&gt; in a directory under each channel alias.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s almost certainly a better way to do this. In fact, it might even be possible to do this all by only using some of the many flags that yt-dlp comes with. I intiially tried writing an &lt;code&gt;awk&lt;/code&gt; script to do this, but I was having a hard time getting it to recognize the video attribute variables (in the form &lt;code&gt;%(var)s&lt;/code&gt;). Another thing I&amp;rsquo;ll have to look into is whether its possible to use an RSS reader to organize things.&lt;/p&gt;
+&lt;p&gt;I feel like a lot of people, myself included, will talk about how they need to stop engaging in self-destructive behaviors, but will continue to do so regardless. It&amp;rsquo;s hard to follow through with vague promises you make to yourself, so here&amp;rsquo;s my attempt at a concrete and actionable solution.&lt;/p&gt;
+</description>
 	</item>
 	
 	</channel>
