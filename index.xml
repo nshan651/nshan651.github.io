@@ -11,6 +11,175 @@
 	
 	
 	<item>
+		<title>Discover</title>
+		<link>http://nshan.is/discover/</link>
+		<pubDate>Thu, 22 Dec 2022 22:29:22 -0600</pubDate>
+		
+		<guid>http://nshan.is/discover/</guid>
+		<description>&lt;p&gt;Here are some great sites that I recommend:&lt;/p&gt;
+&lt;h2 id=&#34;blogs&#34;&gt;Blogs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.daemonology.net/&#34;&gt;Daemonology&lt;/a&gt; &amp;ndash; Lots of writings on FreeBSD&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://danluu.com/&#34;&gt;Dan Luu&lt;/a&gt; &amp;ndash; Newsletter focusing on economics and tech&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gwern.net&#34;&gt;Gwern&lt;/a&gt; &amp;ndash; An absolutely &lt;strong&gt;incredible&lt;/strong&gt; blog, so much here&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jrsinclair.com/&#34;&gt;James Sinclair&lt;/a&gt; &amp;ndash; Austrailian web dev, lots of writings on functional programming&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://joeyh.name/&#34;&gt;Joey Hess&lt;/a&gt; &amp;ndash; Debian core maintainer&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jsomers.net/&#34;&gt;Jsomers&lt;/a&gt; &amp;ndash; Writer and programmer based in NY&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lukesmith.xyz/&#34;&gt;Lukesmith.xyz&lt;/a&gt; &amp;ndash; Tech, linguistics, and more&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mikemcquaid.com/&#34;&gt;Mike McQuaid&lt;/a&gt; &amp;ndash; Principle engineer working on MacOS Homebrew&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://neilgaiman.com/&#34;&gt;Neil Gaiman&amp;rsquo;s Blog&lt;/a&gt; &amp;ndash; Need I say more&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.niamaelbassunie.com/&#34;&gt;Naima El Bassunie&lt;/a&gt; &amp;ndash; Great perspectives on the startup scene in Africa&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.autodidacts.io/&#34;&gt;The Autodidacts&lt;/a&gt; &amp;ndash; Blog of three self-educating brothers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tech&#34;&gt;Tech&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch Linux&lt;/a&gt; &amp;ndash; The Arch Linux homepage and wiki&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gizmodo.com/&#34;&gt;Gizmodo&lt;/a&gt; &amp;ndash; Tech, science, and culture&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://news.ycombinator.com/&#34;&gt;Hacker News&lt;/a&gt; &amp;ndash; Tech news focusing on computer science and entrepreneurship&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://serokell.io/blog/haskell-in-production&#34;&gt;Haskell in Production&lt;/a&gt; &amp;ndash; Collection of interviews of various companies and devs who use Haskell in a production environment&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://newatlas.com/&#34;&gt;New Atlas&lt;/a&gt; &amp;ndash; New science and technology news&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.notechmagazine.com/&#34;&gt;No Tech Magazine&lt;/a&gt;&amp;ndash; Hosts low-tech magazine posts, plus some additional content&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lobste.rs&#34;&gt;Lobste.rs&lt;/a&gt; &amp;ndash; Another link aggregator like HN; generally more tech focused&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lowtechmagazine.com/&#34;&gt;Low-Tech Magazine&lt;/a&gt; &amp;ndash; Tech magazine focusing on sustainability. Website is totally powered by solar energy&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.theregister.com/&#34;&gt;The Register&lt;/a&gt; &amp;ndash; IT news&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cheapskatesguide.org/&#34;&gt;The cheapskate&amp;rsquo;s guide to computers and the internet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.google.com/search?q=slashdot&amp;amp;oq=slashdot&amp;amp;aqs=chrome..69i57j5.1124j0j1&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&#34;&gt;Slashdot&lt;/a&gt; &amp;ndash; News for nerds, stuff that matters&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.2600.com/&#34;&gt;2600&lt;/a&gt;- The hacker quarterly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;educational&#34;&gt;Educational&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://adventofcode.com/&#34;&gt;Advent of Code&lt;/a&gt; &amp;ndash; An annual holiday coding challenge&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://culturaltutor.com/the-library&#34;&gt;The Cultural Tutor&lt;/a&gt; &amp;ndash; Collection of tweets about historical trivia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fullstackeconomics.com/&#34;&gt;Fullstack Economics&lt;/a&gt; &amp;ndash; Newsletter focusing on economics and tech&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml&#34;&gt;Great Works in Programming Languages&lt;/a&gt; &amp;ndash;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nautil.us/&#34;&gt;Nautilus&lt;/a&gt; &amp;ndash; Scientific stories&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thepalladiumgroup.com/areas-expertise/governance&#34;&gt;Palladium&lt;/a&gt; &amp;ndash; Political science magazine on governance, law, and justice&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://projecteuler.net/&#34;&gt;Project Euler&lt;/a&gt; &amp;ndash; Challenging math and computer science problems&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.computerhistory.org/timeline/computers/&#34;&gt;Timeline of Computer History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thegradient.pub/&#34;&gt;The Gradient&lt;/a&gt; &amp;ndash;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://visualgo.net/en&#34;&gt;Visualgo&lt;/a&gt; &amp;ndash; Visualizing data structures and algorithms through animation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;literary-philosophy-and-ai-ethics&#34;&gt;Literary, Philosophy, and AI Ethics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigthink.com/&#34;&gt;Bigthink&lt;/a&gt; &amp;ndash; Multimedia web portal including discussions with experts of various fields&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dynomight.net/&#34;&gt;Dynomight&lt;/a&gt; &amp;ndash; A pretty dynomight internet website!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://joecarlsmith.com/&#34;&gt;Hands and Cities&lt;/a&gt; &amp;ndash; Now links to Joe Carlsmith&amp;rsquo;s blog. Great philosophical writings.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lesswrong.com/&#34;&gt;Less Wrong&lt;/a&gt; &amp;ndash; AI ethics&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pluralistic.net/&#34;&gt;Pluralistic&lt;/a&gt; &amp;ndash; Daily links from Cory Doctorow&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lithub.com/&#34;&gt;Literary Hub&lt;/a&gt; &amp;ndash; Daily literary website&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://singularityhub.com/&#34;&gt;Singularity Hub&lt;/a&gt; &amp;ndash; Philosophy and CS/AI&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thecritic.co.uk/&#34;&gt;The Critic&lt;/a&gt; &amp;ndash; Good ole&amp;rsquo; conservative british takes! Some good stuff here though&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.themarginalian.org/&#34;&gt;The Marginalia&lt;/a&gt; &amp;ndash; An excellent literary magazine&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thewalrus.ca&#34;&gt;The Walrus&lt;/a&gt; &amp;ndash; Indie magazine producing current affairs and literary writingfor s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;collections&#34;&gt;Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://archive.org/&#34;&gt;Internet Archive&lt;/a&gt; &amp;ndash; Probably the greatest repository of human knowledge to ever exist&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.judyrecords.com/&#34;&gt;Judy Records&lt;/a&gt;&amp;ndash; Database of 630 million+ US court cases&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lukesmith.xyz/&#34;&gt;Library of Babel&lt;/a&gt;&amp;ndash; Complete library of all possible 410-page books&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.globalgreyebooks.com/index.html&#34;&gt;Global Grey Ebooks&lt;/a&gt; &amp;ndash; Massive collection of free Ebooks&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://valvearchive.com/&#34;&gt;Valve archive&lt;/a&gt; &amp;ndash; Collection of valve assets, art, and games&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://standardebooks.org/&#34;&gt;Standard Ebooks&lt;/a&gt;&amp;ndash; Free and liberated ebooks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chicago&#34;&gt;Chicago&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://chicagoboyz.net/?bset=0005&#34;&gt;Chicago Boyz&lt;/a&gt; &amp;ndash; A bunch of Chicago school economists and Co.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.chicagocontrarian.com/&#34;&gt;Chicago contrarian&lt;/a&gt; &amp;ndash; Conservative-leaning commentary on urban affairs in Chicago&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.chicagojazz.com/&#34;&gt;Chicago Jazz&lt;/a&gt; &amp;ndash; A great way to find local jazz performances on the cheap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cooking&#34;&gt;Cooking&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Based cooking &amp;ndash;&lt;/li&gt;
+&lt;li&gt;Food Unfolded &amp;ndash;&lt;/li&gt;
+&lt;li&gt;Bon appetit &amp;ndash;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;utility&#34;&gt;Utility&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.smort.io/&#34;&gt;Smort.io&lt;/a&gt; &amp;ndash; Edit, annotate, and share articles&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://12ft.io/&#34;&gt;12ft.io&lt;/a&gt; &amp;ndash; Show me a 10ft paywall, I&amp;rsquo;ll show you a 12ft ladder!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;travel&#34;&gt;Travel&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.atlasobscura.com/&#34;&gt;Atlas Obscura&lt;/a&gt; &amp;ndash; Essays and tips on travel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;discover-the-fediverse&#34;&gt;Discover the Fediverse&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cloud Hiker &amp;ndash;&lt;/li&gt;
+&lt;li&gt;Geocities &amp;ndash;&lt;/li&gt;
+&lt;li&gt;Indieblog &amp;ndash;&lt;/li&gt;
+&lt;li&gt;Neocities &amp;ndash;&lt;/li&gt;
+&lt;li&gt;The Old Net &amp;ndash;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;art&#34;&gt;Art&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Artnet &amp;ndash;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://visualizevalue.com/blogs/visuals&#34;&gt;Visualize Value&lt;/a&gt; &amp;ndash; Awesome minimalist visual representations of various sayings and maxims&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dilbert.com/&#34;&gt;Dilbert&lt;/a&gt; &amp;ndash; Hilarious comics&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sbs.com.au/theboat/&#34;&gt;TheBoat&lt;/a&gt; &amp;ndash; An animated comic adventure making use of parallax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://suricrasia.online/&#34;&gt;Sucrasia Online&lt;/a&gt; &amp;ndash; Toronto-based ISP staffed by antropomorphic sharks&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xkcd.com/&#34;&gt;xkcd&lt;/a&gt; &amp;ndash; More great comics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;needs-sorting&#34;&gt;Needs sorting!&lt;/h2&gt;
+&lt;p&gt;straterchy
+standard ebooks
+the marginalia
+hands and cities
+arunprasad
+the critic
+less wrong
+oneliner hub
+valve archive
+literary hub
+indieblog.page
+food unfolded
+chicago contrarian
+chicago boyz
+the autodidacts
+the cheapskates guide to computers and the internet
+the gradient
+bon appetit: recipes
+atlas obscura
+palladium governance
+bigthink
+the new atlas
+daemonolgy.net
+jsomers.net
+visualizevalue
+bytes magazine
+low tech magazine
+standard ebooks
+the A register
+gizmodo
+culturaltutor.com
+earthly blog
+suricrasia oneline
+chezmoi - chezmoi
+pluralistic
+artnet
+The forest
+The old net
+cloud hiker
+geocities gallery
+Mike mcquaid - principle engineer
+haskell in production
+computers | timeline of computer history
+greatest works in programming languages UPenn
+The Walrus
+neocities
+James Sinclair
+singularity hub&lt;/p&gt;
+&lt;h2 id=&#34;essays&#34;&gt;Essays&lt;/h2&gt;
+&lt;p&gt;Witness by billy woods (everseeker)
+dr. hamming - you and your research
+why schools don&amp;rsquo;t educate - john taylor
+Thomas pynchon - is it O.K to be a luddite&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Personal Library</title>
 		<link>http://nshan.is/library/</link>
 		<pubDate>Sat, 10 Dec 2022 11:14:14 -0600</pubDate>
