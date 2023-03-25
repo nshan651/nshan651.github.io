@@ -1,6 +1,7 @@
 body {
 	font-family: "Merriweather"; 
 	background: #121212;
+    background: #12120f;
 	color: #dcd7ba ;
 }
 
@@ -23,6 +24,7 @@ footer {
 	 text-align: center ;
      border-radius: 25px;
      border: 2px solid #2d4f67;
+     background: #151512;
      width: 100%;
      padding: 25px;
      min-height: 25px;
@@ -44,10 +46,9 @@ a {
 
 /* fzf-like border */
 .fzfborder {
-     border-radius: 25px;
-     border: 2px solid #2b3328;
+     border-radius: 25px ;
      border: 2px solid #223249;
-     /* width: 900px; */
+     background: #151512;
      width: 100%;
      margin-top: 25px;
      padding: 25px;
@@ -84,7 +85,7 @@ nav {
 	float: left;
 	width: 100px;
     min-height: 1.5em;
-    background: #16161d;
+    background: #151512;
     border: 2px solid #2b3328;
     padding: 3px;
     margin: 4px;
