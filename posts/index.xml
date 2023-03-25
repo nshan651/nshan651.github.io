@@ -5,10 +5,55 @@
 	<description>Recent content in Posts on nshan.is</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Fri, 02 Dec 2022 00:25:35 -0600</lastBuildDate>
+	<lastBuildDate>Mon, 02 Jan 2023 00:20:16 -0600</lastBuildDate>
     
         <atom:link href="http://nshan.is/posts/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>Curing my YouTube addiction with yt-dlp</title>
+		<link>http://nshan.is/posts/yt-dlp/</link>
+		<pubDate>Mon, 02 Jan 2023 00:20:16 -0600</pubDate>
+		
+		<guid>http://nshan.is/posts/yt-dlp/</guid>
+		<description>&lt;h1 id=&#34;curing-my-youtube-addiction-with-yt-dlp&#34;&gt;Curing my YouTube addiction with yt-dlp&lt;/h1&gt;
+&lt;p&gt;Of all the social media sites that I have been moving away from, I find that my YouTube addiction is the hardest to kick. There are so many channels that I really do enjoy and whose content has had a profound impact, whether for their artistry or for their educational value. The creators are great, but lately I&amp;rsquo;ve started to wonder about the platform itself.&lt;/p&gt;
+&lt;p&gt;My main issue is with the algorithm. I&amp;rsquo;m especially susceptible to algorithmic content recommendation, and yet I still find that 95% of what is recommended to me is garbage that doesn&amp;rsquo;t bring me any joy. So why do I still consume content? Here are a couple of reasons:&lt;/p&gt;
+&lt;h4 id=&#34;little-effort-required&#34;&gt;Little effort required&lt;/h4&gt;
+&lt;p&gt;Watching videos is typically a very passive experience. It&amp;rsquo;s easy to throw it on in the background while doing something else like cooking or working. The YouTube algorithm makes it so there is almost no friction in content consumption/discovery.&lt;/p&gt;
+&lt;h4 id=&#34;lack-of-continuity&#34;&gt;Lack of continuity&lt;/h4&gt;
+&lt;p&gt;Videos tend to vary in length, especially depending on the genre of video. I tend to watch a mix of both long-form video essays that are 1-hour plus, and shorter form clips lasting 5-10 minutes. Because different channel can focus on such disparate themes and topics, it can often feel like there is a lack of progression between videos. Episodes of television may stand on their own, but at least there is usually some overarching plot line that the viewer can use to determine progress in a show. Although I didn&amp;rsquo;t grow up watching a lot of TV, I never felt like overconsumption was as tempting. Even in the cases when I binged a show, I was consciously aware of how many episodes I watched based on the evolution of the plot. The differing lengths and lack of progression between videos contributes to a general lack of continuity, and makes it hard to gage exactly how much YouTube I consume.&lt;/p&gt;
+&lt;h4 id=&#34;dopamine&#34;&gt;Dopamine&lt;/h4&gt;
+&lt;p&gt;It&amp;rsquo;s common to associate addiction with with vices like drugs, sex, or gambling. I consider myself fortunate that I haven&amp;rsquo;t personally struggled with any of these addictions, and I don&amp;rsquo;t want to detract from the fact that they can be extremely debilitating. However, I feel that because Internet addiction doesn&amp;rsquo;t have the same social stigma, it makes it difficult to identify it as a problem. There are no laws limiting YouTube use or consumption as there are with the above. Perhaps the other reason it is so hard to recognize is because we are all addicted. We are so dependent on technology that it has become hard to distinguish using it as a tool versus using it self-destructively.&lt;/p&gt;
+&lt;h4 id=&#34;habit&#34;&gt;Habit&lt;/h4&gt;
+&lt;p&gt;The above factors all contribute to the formation of bad habits of unconscious consumption. It has gotten to the point where I&amp;rsquo;ll mindlessly play a video at every possible pause in my day, as if the moment alone with my thoughts is too much to handle. I really value moments of introspection, and the fact that I seem to be afraid of it is really upsetting.&lt;/p&gt;
+&lt;h2 id=&#34;the-solution&#34;&gt;The solution?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Every object, every being,&lt;br&gt;
+is a jar full of delight.&lt;br&gt;
+Be a connoisseur,&lt;br&gt;
+and taste with caution.&lt;br&gt;
+- Rumi, &lt;em&gt;The Many Wines&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;The Many Wines&lt;/em&gt;, by Rumi, is a Sufi poem cautioning others on the perils of pleasure. He compares the world&amp;rsquo;s pleasures to &amp;ldquo;thousands of wines, that can take of our minds.&amp;rdquo; The message is not to completely cut off all desire, but to reduce our interactions with the world to only the things that bring positivity to our lives.&lt;/p&gt;
+&lt;p&gt;Lately I feel like I haven&amp;rsquo;t been a good connoisseur. I&amp;rsquo;ve gotten drunk in my sampling, and I&amp;rsquo;ve stopped making conscious decisions. I need some way to re-empower myself so that I can once again make deliberate choices.&lt;/p&gt;
+&lt;p&gt;My solution is simple: Get off the platform, and consume only the content I want to see. I wrote a Python script using &lt;code&gt;yt-dlp&lt;/code&gt; to download and organize the five most recent videos from the channels that I want to follow. I deleted my YouTube account as well so that there isn&amp;rsquo;t even a possibility to go back to the algorithm.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Download yt sub content en masse using yt-dlp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sub_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/home/nick/Videos/subs.txt&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;r&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; sub &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; sub_list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    name, link &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sub&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;system(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        yt-dlp -f mp4 -I &amp;#34;1:5&amp;#34; &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;link&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; -o &amp;#34;$HOME/Videos/channels/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;name&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/%(upload_date&amp;gt;%Y-%m-%d)s-%(title)s.%(ext)s&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The script is dead-simple. We&amp;rsquo;re looping through a file containing the aliases and links of all the channels I want to follow, then we download the 5 most recent videos and place them inside &lt;code&gt;~/Videos/channels/&lt;/code&gt; in a directory under each channel alias.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s almost certainly a better way to do this. In fact, it might even be possible to do this all by only using some of the many flags that yt-dlp comes with. I intiially tried writing an &lt;code&gt;awk&lt;/code&gt; script to do this, but I was having a hard time getting it to recognize the video attribute variables (in the form &lt;code&gt;%(var)s&lt;/code&gt;). Another thing I&amp;rsquo;ll have to look into is whether its possible to use an RSS reader to organize things.&lt;/p&gt;
+&lt;p&gt;I feel like a lot of people, myself included, will talk about how they need to stop engaging in self-destructive behaviors, but will continue to do so regardless. It&amp;rsquo;s hard to follow through with vague promises you make to yourself, so here&amp;rsquo;s my attempt at a concrete and actionable solution.&lt;/p&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>Discover</title>
@@ -58,6 +103,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.computerhistory.org/timeline/computers/&#34;&gt;Timeline of Computer History&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://thegradient.pub/&#34;&gt;The Gradient&lt;/a&gt; &amp;ndash;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://visualgo.net/en&#34;&gt;Visualgo&lt;/a&gt; &amp;ndash; Visualizing data structures and algorithms through animation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://topdocumentaryfilms.com&#34;&gt;Top Documentary Films&lt;/a&gt; &amp;ndash; Documentaries on the Internet&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;literary-philosophy-and-ai-ethics&#34;&gt;Literary, Philosophy, and AI Ethics&lt;/h2&gt;
 &lt;ul&gt;
@@ -71,6 +117,14 @@
 &lt;li&gt;&lt;a href=&#34;https://thecritic.co.uk/&#34;&gt;The Critic&lt;/a&gt; &amp;ndash; Good ole&amp;rsquo; conservative british takes! Some good stuff here though&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.themarginalian.org/&#34;&gt;The Marginalia&lt;/a&gt; &amp;ndash; An excellent literary magazine&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://thewalrus.ca&#34;&gt;The Walrus&lt;/a&gt; &amp;ndash; Indie magazine producing current affairs and literary writingfor s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;personal-finance&#34;&gt;Personal Finance&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bogleheads.org/&#34;&gt;Bogleheads&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bogleheads.org/wiki/Bogleheads%C2%AE_investment_philosophy&#34;&gt;Bogleheads Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://finviz.com/&#34;&gt;Finviz Stock Screener&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.portfoliovisualizer.com/backtest-asset-class-allocation&#34;&gt;Portfolio Backtesting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://seekingalpha.com/&#34;&gt;Seeking Alpha&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;collections&#34;&gt;Collections&lt;/h2&gt;
 &lt;ul&gt;
@@ -180,104 +234,9 @@ Thomas pynchon - is it O.K to be a luddite&lt;/p&gt;
 	</item>
 	
 	<item>
-		<title>Personal Library</title>
-		<link>http://nshan.is/library/</link>
-		<pubDate>Sat, 10 Dec 2022 11:14:14 -0600</pubDate>
-		
-		<guid>http://nshan.is/library/</guid>
-		<description>&lt;p&gt;Here is my personal library, organized using the Library of Congress Classification (LCC) method.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#a&#34;&gt;A &amp;ndash; GENERAL WORKS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#b&#34;&gt;B &amp;ndash; PHILOSOPHY. PSYCHOLOGY. RELIGION&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#c&#34;&gt;C &amp;ndash; AUXILIARY SCIENCES OF HISTORY&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#d&#34;&gt;D &amp;ndash; WORLD HISTORY AND HISTORY OF EUROPE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#e&#34;&gt;E &amp;ndash; HISTORY OF THE AMERICAS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#f&#34;&gt;F &amp;ndash; HISTORY OF THE AMERICAS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#g&#34;&gt;G &amp;ndash; GEOGRAPHY. ANTHROPOLOGY. RECREATION&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#h&#34;&gt;H &amp;ndash; SOCIAL SCIENCES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#j&#34;&gt;J &amp;ndash; POLITICAL SCIENCE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#k&#34;&gt;K &amp;ndash; LAW&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#l&#34;&gt;L &amp;ndash; EDUCATION&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#m&#34;&gt;M &amp;ndash; MUSIC AND BOOKS ON MUSIC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#n&#34;&gt;N &amp;ndash; FINE ARTS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#p&#34;&gt;P &amp;ndash; LANGUAGE AND LITERATURE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#q&#34;&gt;Q &amp;ndash; SCIENCE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#r&#34;&gt;R &amp;ndash; MEDICINE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#s&#34;&gt;S &amp;ndash; AGRICULTURE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#t&#34;&gt;T &amp;ndash; TECHNOLOGY&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#u&#34;&gt;U &amp;ndash; MILITARY SCIENCE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#v&#34;&gt;V &amp;ndash; NAVAL SCIENCE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#z&#34;&gt;Z &amp;ndash; BIBLIOGRAPHY. LIBRARY SCIENCE. INFORMATION RESOURCES&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;a&#34;&gt;A &amp;ndash; GENERAL WORKS&lt;/h3&gt;
-&lt;h3 id=&#34;b&#34;&gt;B &amp;ndash; PHILOSOPHY. PSYCHOLOGY. RELIGION&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Singer, Peter &amp;ndash; &lt;em&gt;Animal Liberation&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;c&#34;&gt;C &amp;ndash; AUXILIARY SCIENCES OF HISTORY&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Osserman, Robert &amp;ndash; &lt;em&gt;Poetry of the Universe&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;d&#34;&gt;D &amp;ndash; WORLD HISTORY AND HISTORY OF EUROPE&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Procopius &amp;ndash; &lt;em&gt;The Secret History&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;e&#34;&gt;E &amp;ndash; HISTORY OF THE AMERICAS&lt;/h3&gt;
-&lt;h3 id=&#34;f&#34;&gt;F &amp;ndash; HISTORY OF THE AMERICAS&lt;/h3&gt;
-&lt;h3 id=&#34;g&#34;&gt;G &amp;ndash; GEOGRAPHY. ANTHROPOLOGY. RECREATION&lt;/h3&gt;
-&lt;h3 id=&#34;h&#34;&gt;H &amp;ndash; SOCIAL SCIENCES&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Rothbard, Murray &amp;ndash; &lt;em&gt;Anatomy of the State&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;j&#34;&gt;J &amp;ndash; POLITICAL SCIENCE&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Levin, Richard &amp;ndash; &lt;em&gt;The Work of the University&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Chomsky, Noam &amp;ndash; &lt;em&gt;The Prosperous Few and the Restless Many&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;k&#34;&gt;K &amp;ndash; LAW&lt;/h3&gt;
-&lt;h3 id=&#34;l&#34;&gt;L &amp;ndash; EDUCATION&lt;/h3&gt;
-&lt;h3 id=&#34;m&#34;&gt;M &amp;ndash; MUSIC AND BOOKS ON MUSIC&lt;/h3&gt;
-&lt;h3 id=&#34;n&#34;&gt;N &amp;ndash; FINE ARTS&lt;/h3&gt;
-&lt;h3 id=&#34;p&#34;&gt;P &amp;ndash; LANGUAGE AND LITERATURE&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Bulgakov, Mikhail &amp;ndash; &lt;em&gt;The Master and Margarita&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Chabon, Michael &amp;ndash; &lt;em&gt;Werewolves in Their Youth&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Énard, Mathias &amp;ndash; &lt;em&gt;Tell them of Battles, Kings and Elephants&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;García Márquez, Gabriel &amp;ndash; &lt;em&gt;Strange Pilgrims: Twelve Stories&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Pynchon, Thomas &amp;ndash; &lt;em&gt;Gravity&amp;rsquo;s Rainbow&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Roth, Philip &amp;ndash; &lt;em&gt;Goodbye, Columbus and Five Short Stories&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;q&#34;&gt;Q &amp;ndash; SCIENCE&lt;/h3&gt;
-&lt;h3 id=&#34;r&#34;&gt;R &amp;ndash; MEDICINE&lt;/h3&gt;
-&lt;h3 id=&#34;s&#34;&gt;S &amp;ndash; AGRICULTURE&lt;/h3&gt;
-&lt;h3 id=&#34;t&#34;&gt;T &amp;ndash; TECHNOLOGY&lt;/h3&gt;
-&lt;h3 id=&#34;u&#34;&gt;U &amp;ndash; MILITARY SCIENCE&lt;/h3&gt;
-&lt;h3 id=&#34;v&#34;&gt;V &amp;ndash; NAVAL SCIENCE&lt;/h3&gt;
-&lt;h3 id=&#34;z&#34;&gt;Z &amp;ndash; BIBLIOGRAPHY. LIBRARY SCIENCE. INFORMATION RESOURCES&lt;/h3&gt;
-</description>
-	</item>
-	
-	<item>
-		<title>How Do You Eat an Elephant</title>
-		<link>http://nshan.is/posts/how-do-you-eat-an-elephant/</link>
-		<pubDate>Fri, 02 Dec 2022 00:25:35 -0600</pubDate>
-		
-		<guid>http://nshan.is/posts/how-do-you-eat-an-elephant/</guid>
-		<description>&lt;p&gt;This is the phrase that my piano teacher would often repeat to me whenever I began to learn a new piece. &amp;ldquo;One bite at a time,&amp;rdquo; I would reply. I always knew the answer, but the reminder helped prime me to meet the coming challenge. Instead of looking at a piece of music as a whole, he encouraged me to break it down into its atomic elements.&lt;/p&gt;
-&lt;p&gt;Start from left to right, top to bottom. What does the tempo marking say about how the piece should be played? Look at what key it is in. Check the time signature. What do the dynamics tell you about the volume of the piece? If you&amp;rsquo;re sight-reading, take an additional minute or two to run through the piece in your head and &amp;ldquo;tap it out&amp;rdquo; with your hands before you start. After all this preparation is done, its finally time to play. A lot of people would be tempted to skip right to playing, but taking even three minutes to think about the details of the composition saves time and effort later on down the line.&lt;/p&gt;
-&lt;p&gt;Once I&amp;rsquo;ve gotten somewhat familiar with a piece, I like to continue my philosophy of &amp;ldquo;one bite at a time&amp;rdquo; by sectioning off different phrases. For those who didn&amp;rsquo;t know, a phrase in music theory is like a self contained thought that has a &amp;ldquo;musical sense of its own.&amp;rdquo; &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Phrase&#34;&gt;1&lt;/a&gt; This method of compartmentalization reveals a lot about a song&amp;rsquo;s underlying structure. You&amp;rsquo;ll often find that certain phrases share ideas or even repeat.&lt;/p&gt;
-&lt;p&gt;If it wasn&amp;rsquo;t already obvious, I&amp;rsquo;m not even close to a professional musician. This is not meant to be taken as musical coaching. Rather, I want to show how my piano teacher&amp;rsquo;s &amp;ldquo;one bite&amp;rdquo; method can be applied to other disciplines. Take software development. Everyone knows how overwhelming it can feel to learn a new technology or the ins and outs of a codebase. If you find yourself feeling this way, consider how you&amp;rsquo;re eating the elephant.&lt;/p&gt;
-&lt;p&gt;First, you probably don&amp;rsquo;t need to understand every single detail right away. Focus only on what you need to know, and the rest will come later. Next, look for patterns. There are often similar &amp;ldquo;phrases&amp;rdquo; present throughout a codebase that make the familiarization process much easier. Likewise, it can be useful to compare a new programming language to one you already know. I&amp;rsquo;ve been able to pick up Lua fairly quickly because of my existing familiarity with Python. Both languages are dynamically typed and share similar syntax. Because of this, I was able to focus on the aspects of Lua that were new to me, such as tables (Lua&amp;rsquo;s single data structure), metatables, and its ability to easily interface with C/C++. Finally, pay attention to the negative space, i.e. what is &lt;em&gt;not&lt;/em&gt;. Rests in music have their own corresponding symbols that show when not to play something. It&amp;rsquo;s natural to think of notes first and to fill in the rests afterward, but organized and intentional silence is a critical part of musical expression. At first it may seem unintuitive when it comes to software development, but having a good understanding of what your program is and is not capable of allows you to intentionally leave intentional pauses. I&amp;rsquo;d liken this to the Unix philosophy of designing simple, easily-combinable programs that allow the liminal spaces to be filled in by others. One could even think of Unix program like &lt;code&gt;cat&lt;/code&gt; or &lt;code&gt;grep&lt;/code&gt; as musical phrases, self-contained ideas that can be expanded to form a song greater than the sum of its parts.&lt;/p&gt;
-</description>
-	</item>
-	
-	<item>
 		<title>A Beginners Thoughts on Releasing Software</title>
 		<link>http://nshan.is/posts/beginners-thoughts-on-releasing-software/</link>
-		<pubDate>Fri, 02 Dec 2022 00:20:16 -0600</pubDate>
+		<pubDate>Thu, 15 Dec 2022 00:20:16 -0600</pubDate>
 		
 		<guid>http://nshan.is/posts/beginners-thoughts-on-releasing-software/</guid>
 		<description>&lt;p&gt;I wanted to share my experience with uploading my first package, excite-cli, to the Arch User Repository (AUR). While the process was fairly straightforward (especially with &lt;a href=&#34;https://wiki.archlinux.org/title/Creating_packages&#34;&gt;this&lt;/a&gt; handy guide on the Arch Wiki on creating packages), I ran into several issues along the way. Most of my confusion arose from project-specific design choices or my own misunderstanding, but there were some legitimately confusing parts that I think are worth explaining. Hopefully this can serve as a quickstart and provide inspiration for releasing your own project on a package manager.&lt;/p&gt;
@@ -406,9 +365,105 @@ Additional comments about closing:  We&amp;rsquo;ve been using master for 15 yea
 	</item>
 	
 	<item>
+		<title>Personal Library</title>
+		<link>http://nshan.is/library/</link>
+		<pubDate>Sat, 10 Dec 2022 11:14:14 -0600</pubDate>
+		
+		<guid>http://nshan.is/library/</guid>
+		<description>&lt;p&gt;Here is my personal library, organized using the Library of Congress Classification (LCC) method.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#a&#34;&gt;A &amp;ndash; GENERAL WORKS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#b&#34;&gt;B &amp;ndash; PHILOSOPHY. PSYCHOLOGY. RELIGION&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#c&#34;&gt;C &amp;ndash; AUXILIARY SCIENCES OF HISTORY&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#d&#34;&gt;D &amp;ndash; WORLD HISTORY AND HISTORY OF EUROPE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#e&#34;&gt;E &amp;ndash; HISTORY OF THE AMERICAS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#f&#34;&gt;F &amp;ndash; HISTORY OF THE AMERICAS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#g&#34;&gt;G &amp;ndash; GEOGRAPHY. ANTHROPOLOGY. RECREATION&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#h&#34;&gt;H &amp;ndash; SOCIAL SCIENCES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#j&#34;&gt;J &amp;ndash; POLITICAL SCIENCE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#k&#34;&gt;K &amp;ndash; LAW&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#l&#34;&gt;L &amp;ndash; EDUCATION&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#m&#34;&gt;M &amp;ndash; MUSIC AND BOOKS ON MUSIC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#n&#34;&gt;N &amp;ndash; FINE ARTS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#p&#34;&gt;P &amp;ndash; LANGUAGE AND LITERATURE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#q&#34;&gt;Q &amp;ndash; SCIENCE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#r&#34;&gt;R &amp;ndash; MEDICINE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#s&#34;&gt;S &amp;ndash; AGRICULTURE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#t&#34;&gt;T &amp;ndash; TECHNOLOGY&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#u&#34;&gt;U &amp;ndash; MILITARY SCIENCE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#v&#34;&gt;V &amp;ndash; NAVAL SCIENCE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#z&#34;&gt;Z &amp;ndash; BIBLIOGRAPHY. LIBRARY SCIENCE. INFORMATION RESOURCES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;a&#34;&gt;A &amp;ndash; GENERAL WORKS&lt;/h3&gt;
+&lt;h3 id=&#34;b&#34;&gt;B &amp;ndash; PHILOSOPHY. PSYCHOLOGY. RELIGION&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;./read/hesse_hermann_steppenwolf&#34;&gt;Link Title Here&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Singer, Peter &amp;ndash; &lt;em&gt;Animal Liberation&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;c&#34;&gt;C &amp;ndash; AUXILIARY SCIENCES OF HISTORY&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Osserman, Robert &amp;ndash; &lt;em&gt;Poetry of the Universe&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;d&#34;&gt;D &amp;ndash; WORLD HISTORY AND HISTORY OF EUROPE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Procopius &amp;ndash; &lt;em&gt;The Secret History&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;e&#34;&gt;E &amp;ndash; HISTORY OF THE AMERICAS&lt;/h3&gt;
+&lt;h3 id=&#34;f&#34;&gt;F &amp;ndash; HISTORY OF THE AMERICAS&lt;/h3&gt;
+&lt;h3 id=&#34;g&#34;&gt;G &amp;ndash; GEOGRAPHY. ANTHROPOLOGY. RECREATION&lt;/h3&gt;
+&lt;h3 id=&#34;h&#34;&gt;H &amp;ndash; SOCIAL SCIENCES&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Rothbard, Murray &amp;ndash; &lt;em&gt;Anatomy of the State&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;j&#34;&gt;J &amp;ndash; POLITICAL SCIENCE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Levin, Richard &amp;ndash; &lt;em&gt;The Work of the University&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Chomsky, Noam &amp;ndash; &lt;em&gt;The Prosperous Few and the Restless Many&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;k&#34;&gt;K &amp;ndash; LAW&lt;/h3&gt;
+&lt;h3 id=&#34;l&#34;&gt;L &amp;ndash; EDUCATION&lt;/h3&gt;
+&lt;h3 id=&#34;m&#34;&gt;M &amp;ndash; MUSIC AND BOOKS ON MUSIC&lt;/h3&gt;
+&lt;h3 id=&#34;n&#34;&gt;N &amp;ndash; FINE ARTS&lt;/h3&gt;
+&lt;h3 id=&#34;p&#34;&gt;P &amp;ndash; LANGUAGE AND LITERATURE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bulgakov, Mikhail &amp;ndash; &lt;em&gt;The Master and Margarita&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Chabon, Michael &amp;ndash; &lt;em&gt;Werewolves in Their Youth&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Énard, Mathias &amp;ndash; &lt;em&gt;Tell them of Battles, Kings and Elephants&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;García Márquez, Gabriel &amp;ndash; &lt;em&gt;Strange Pilgrims: Twelve Stories&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Pynchon, Thomas &amp;ndash; &lt;em&gt;Gravity&amp;rsquo;s Rainbow&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Roth, Philip &amp;ndash; &lt;em&gt;Goodbye, Columbus and Five Short Stories&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;q&#34;&gt;Q &amp;ndash; SCIENCE&lt;/h3&gt;
+&lt;h3 id=&#34;r&#34;&gt;R &amp;ndash; MEDICINE&lt;/h3&gt;
+&lt;h3 id=&#34;s&#34;&gt;S &amp;ndash; AGRICULTURE&lt;/h3&gt;
+&lt;h3 id=&#34;t&#34;&gt;T &amp;ndash; TECHNOLOGY&lt;/h3&gt;
+&lt;h3 id=&#34;u&#34;&gt;U &amp;ndash; MILITARY SCIENCE&lt;/h3&gt;
+&lt;h3 id=&#34;v&#34;&gt;V &amp;ndash; NAVAL SCIENCE&lt;/h3&gt;
+&lt;h3 id=&#34;z&#34;&gt;Z &amp;ndash; BIBLIOGRAPHY. LIBRARY SCIENCE. INFORMATION RESOURCES&lt;/h3&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>How Do You Eat an Elephant</title>
+		<link>http://nshan.is/posts/how-do-you-eat-an-elephant/</link>
+		<pubDate>Sat, 15 Oct 2022 00:25:35 -0600</pubDate>
+		
+		<guid>http://nshan.is/posts/how-do-you-eat-an-elephant/</guid>
+		<description>&lt;p&gt;This is the phrase that my piano teacher would often repeat to me whenever I began to learn a new piece. &amp;ldquo;One bite at a time,&amp;rdquo; I would reply. I always knew the answer, but the reminder helped prime me to meet the coming challenge. Instead of looking at a piece of music as a whole, he encouraged me to break it down into its atomic elements.&lt;/p&gt;
+&lt;p&gt;Start from left to right, top to bottom. What does the tempo marking say about how the piece should be played? Look at what key it is in. Check the time signature. What do the dynamics tell you about the volume of the piece? If you&amp;rsquo;re sight-reading, take an additional minute or two to run through the piece in your head and &amp;ldquo;tap it out&amp;rdquo; with your hands before you start. After all this preparation is done, its finally time to play. A lot of people would be tempted to skip right to playing, but taking even three minutes to think about the details of the composition saves time and effort later on down the line.&lt;/p&gt;
+&lt;p&gt;Once I&amp;rsquo;ve gotten somewhat familiar with a piece, I like to continue my philosophy of &amp;ldquo;one bite at a time&amp;rdquo; by sectioning off different phrases. For those who didn&amp;rsquo;t know, a phrase in music theory is like a self contained thought that has a &amp;ldquo;musical sense of its own.&amp;rdquo; &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Phrase&#34;&gt;1&lt;/a&gt; This method of compartmentalization reveals a lot about a song&amp;rsquo;s underlying structure. You&amp;rsquo;ll often find that certain phrases share ideas or even repeat.&lt;/p&gt;
+&lt;p&gt;If it wasn&amp;rsquo;t already obvious, I&amp;rsquo;m not even close to a professional musician. This is not meant to be taken as musical coaching. Rather, I want to show how my piano teacher&amp;rsquo;s &amp;ldquo;one bite&amp;rdquo; method can be applied to other disciplines. Take software development. Everyone knows how overwhelming it can feel to learn a new technology or the ins and outs of a codebase. If you find yourself feeling this way, consider how you&amp;rsquo;re eating the elephant.&lt;/p&gt;
+&lt;p&gt;First, you probably don&amp;rsquo;t need to understand every single detail right away. Focus only on what you need to know, and the rest will come later. Next, look for patterns. There are often similar &amp;ldquo;phrases&amp;rdquo; present throughout a codebase that make the familiarization process much easier. Likewise, it can be useful to compare a new programming language to one you already know. I&amp;rsquo;ve been able to pick up Lua fairly quickly because of my existing familiarity with Python. Both languages are dynamically typed and share similar syntax. Because of this, I was able to focus on the aspects of Lua that were new to me, such as tables (Lua&amp;rsquo;s single data structure), metatables, and its ability to easily interface with C/C++. Finally, pay attention to the negative space, i.e. what is &lt;em&gt;not&lt;/em&gt;. Rests in music have their own corresponding symbols that show when not to play something. It&amp;rsquo;s natural to think of notes first and to fill in the rests afterward, but organized and intentional silence is a critical part of musical expression. At first it may seem unintuitive when it comes to software development, but having a good understanding of what your program is and is not capable of allows you to intentionally leave intentional pauses. I&amp;rsquo;d liken this to the Unix philosophy of designing simple, easily-combinable programs that allow the liminal spaces to be filled in by others. One could even think of Unix program like &lt;code&gt;cat&lt;/code&gt; or &lt;code&gt;grep&lt;/code&gt; as musical phrases, self-contained ideas that can be expanded to form a song greater than the sum of its parts.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Be a Producer</title>
 		<link>http://nshan.is/posts/be-a-producer/</link>
-		<pubDate>Fri, 02 Dec 2022 00:20:16 -0600</pubDate>
+		<pubDate>Fri, 06 May 2022 00:20:16 -0600</pubDate>
 		
 		<guid>http://nshan.is/posts/be-a-producer/</guid>
 		<description>&lt;h1 id=&#34;be-a-producer&#34;&gt;Be a Producer&lt;/h1&gt;
@@ -428,52 +483,6 @@ I think this has been one of the hardest hurdles to overcome for me. I tend to w
 &lt;/ol&gt;
 &lt;p&gt;As a final piece of advice that I have to remind myself of everyday, &lt;strong&gt;Don&amp;rsquo;t be afraid to make mistakes&lt;/strong&gt;. The only thing you should fear is not making enough mistakes&lt;/p&gt;
 &lt;p&gt;I wanted this to be my first post because I want sharing and information transfer to be a theme of this blog.&lt;/p&gt;
-</description>
-	</item>
-	
-	<item>
-		<title>Curing my YouTube addiction with yt-dlp</title>
-		<link>http://nshan.is/posts/yt-dlp/</link>
-		<pubDate>Fri, 02 Dec 2022 00:20:16 -0600</pubDate>
-		
-		<guid>http://nshan.is/posts/yt-dlp/</guid>
-		<description>&lt;h1 id=&#34;curing-my-youtube-addiction-with-yt-dlp&#34;&gt;Curing my YouTube addiction with yt-dlp&lt;/h1&gt;
-&lt;h2 id=&#34;2022-11-27&#34;&gt;2022-11-27&lt;/h2&gt;
-&lt;p&gt;Of all the social media sites that I have been moving away from, I find that my YouTube addiction is the hardest to kick. There are so many channels that I really do enjoy and whose content has had a profound impact, whether for their artistry or for their educational value. The creators are great, but lately I&amp;rsquo;ve started to wonder about the platform itself.&lt;/p&gt;
-&lt;p&gt;My main issue is with the algorithm. I&amp;rsquo;m especially susceptible to algorithmic content recommendation, and yet I still find that 95% of what is recommended to me is garbage that doesn&amp;rsquo;t bring me any joy. So why do I still consume content? Here are a couple of reasons:&lt;/p&gt;
-&lt;h4 id=&#34;little-effort-required&#34;&gt;Little effort required&lt;/h4&gt;
-&lt;p&gt;Watching videos is typically a very passive experience. It&amp;rsquo;s easy to throw it on in the background while doing something else like cooking or working. The YouTube algorithm makes it so there is almost no friction in content consumption/discovery.&lt;/p&gt;
-&lt;h4 id=&#34;lack-of-continuity&#34;&gt;Lack of continuity&lt;/h4&gt;
-&lt;p&gt;Videos tend to vary in length, especially depending on the genre of video. I tend to watch a mix of both long-form video essays that are 1-hour plus, and shorter form clips lasting 5-10 minutes. Because different channel can focus on such disparate themes and topics, it can often feel like there is a lack of progression between videos. Episodes of television may stand on their own, but at least there is usually some overarching plot line that the viewer can use to determine progress in a show. Although I didn&amp;rsquo;t grow up watching a lot of TV, I never felt like overconsumption was as tempting. Even in the cases when I binged a show, I was consciously aware of how many episodes I watched based on the evolution of the plot. The differing lengths and lack of progression between videos contributes to a general lack of continuity, and makes it hard to gage exactly how much YouTube I consume.&lt;/p&gt;
-&lt;h4 id=&#34;dopamine&#34;&gt;Dopamine&lt;/h4&gt;
-&lt;p&gt;It&amp;rsquo;s common to associate addiction with with vices like drugs, sex, or gambling. I consider myself fortunate that I haven&amp;rsquo;t personally struggled with any of these addictions, and I don&amp;rsquo;t want to detract from the fact that they can be extremely debilitating. However, I feel that because Internet addiction doesn&amp;rsquo;t have the same social stigma, it makes it difficult to identify it as a problem. There are no laws limiting YouTube use or consumption as there are with the above. Perhaps the other reason it is so hard to recognize is because we are all addicted. We are so dependent on technology that it has become hard to distinguish using it as a tool versus using it self-destructively.&lt;/p&gt;
-&lt;h4 id=&#34;habit&#34;&gt;Habit&lt;/h4&gt;
-&lt;p&gt;The above factors all contribute to the formation of bad habits of unconscious consumption. It has gotten to the point where I&amp;rsquo;ll mindlessly play a video at every possible pause in my day, as if the moment alone with my thoughts is too much to handle. I really value moments of introspection, and the fact that I seem to be afraid of it is really upsetting.&lt;/p&gt;
-&lt;h2 id=&#34;the-solution&#34;&gt;The solution?&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Every object, every being,&lt;br&gt;
-is a jar full of delight.&lt;br&gt;
-Be a connoisseur,&lt;br&gt;
-and taste with caution.&lt;br&gt;
-- Rumi, &lt;em&gt;The Many Wines&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;em&gt;The Many Wines&lt;/em&gt;, by Rumi, is a Sufi poem cautioning others on the perils of pleasure. He compares the world&amp;rsquo;s pleasures to &amp;ldquo;thousands of wines, that can take of our minds.&amp;rdquo; The message is not to completely cut off all desire, but to reduce our interactions with the world to only the things that bring positivity to our lives.&lt;/p&gt;
-&lt;p&gt;Lately I feel like I haven&amp;rsquo;t been a good connoisseur. I&amp;rsquo;ve gotten drunk in my sampling, and I&amp;rsquo;ve stopped making conscious decisions. I need some way to re-empower myself so that I can once again make deliberate choices.&lt;/p&gt;
-&lt;p&gt;My solution is simple: Get off the platform, and consume only the content I want to see. I wrote a Python script using &lt;code&gt;yt-dlp&lt;/code&gt; to download and organize the five most recent videos from the channels that I want to follow. I deleted my YouTube account as well so that there isn&amp;rsquo;t even a possibility to go back to the algorithm.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/python&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Download yt sub content en masse using yt-dlp&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sub_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/home/nick/Videos/subs.txt&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;r&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; sub &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; sub_list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;readlines():
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    name, link &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sub&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;system(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        yt-dlp -f mp4 -I &amp;#34;1:5&amp;#34; &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;link&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; -o &amp;#34;$HOME/Videos/channels/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;name&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/%(upload_date&amp;gt;%Y-%m-%d)s-%(title)s.%(ext)s&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The script is dead-simple. We&amp;rsquo;re looping through a file containing the aliases and links of all the channels I want to follow, then we download the 5 most recent videos and place them inside &lt;code&gt;~/Videos/channels/&lt;/code&gt; in a directory under each channel alias.&lt;/p&gt;
-&lt;p&gt;There&amp;rsquo;s almost certainly a better way to do this. In fact, it might even be possible to do this all by only using some of the many flags that yt-dlp comes with. I intiially tried writing an &lt;code&gt;awk&lt;/code&gt; script to do this, but I was having a hard time getting it to recognize the video attribute variables (in the form &lt;code&gt;%(var)s&lt;/code&gt;). Another thing I&amp;rsquo;ll have to look into is whether its possible to use an RSS reader to organize things.&lt;/p&gt;
-&lt;p&gt;I feel like a lot of people, myself included, will talk about how they need to stop engaging in self-destructive behaviors, but will continue to do so regardless. It&amp;rsquo;s hard to follow through with vague promises you make to yourself, so here&amp;rsquo;s my attempt at a concrete and actionable solution.&lt;/p&gt;
 </description>
 	</item>
 	

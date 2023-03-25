@@ -1,15 +1,13 @@
 body {
-	font-family: sans-serif ;
-	background: #2f383e;
-	color: #faedcd ;
+	font-family: "Merriweather"; 
+	background: #121212;
+	color: #dcd7ba ;
 }
 
 main {
 	max-width: 800px ;
 	margin: auto ;
 }
-
-/* ![platypus](/images/jungle-pc.jpg){width=20% height=20%}  */
 
 img {
 	max-width: 100% ;
@@ -20,65 +18,52 @@ header h1 {
 }
 
 footer {
-	 /*max-width: 900px;*/
+	 max-width: 900px ;
      margin-top: 25px ;
 	 text-align: center ;
      border-radius: 25px;
-     border: 2px solid #596763;
+     border: 2px solid #2d4f67;
      width: 100%;
      padding: 25px;
      min-height: 25px;
-     /*position: absolute;*/
 }
 
 /* Links */
 a:visited{  
-    color: #e9f0e9 ;
+    color: #dca561;
 }  
 a:hover{  
-    color:#573e4c;  
+    color:#49443c;  
 }  
 a:active{  
-    color: #e9f0e9 ;
+    color: #dca561;
 }  
 a {
-    color: #e9f0e9 ;
+    color: #dca561;
 }
 
 /* fzf-like border */
 .fzfborder {
      border-radius: 25px;
-     border: 2px solid #596763;
-     /*width: 900px;*/
+     border: 2px solid #2b3328;
+     border: 2px solid #223249;
+     /* width: 900px; */
      width: 100%;
      margin-top: 25px;
      padding: 25px;
      min-height: 800px;
-     /*margin-left: -100px;*/
 }
+
 /* Nav */
 .menubar {
     display: inline-block;
     margin: 0px;
     width: 1000px;
-    /*width: 120%;*/
 }
 
 .menubar li a {
     display: block;
 }
-
-/*
-.titlemenu {
-    display: inline-block;
-    position: relative;
-    left: 0;
-    margin-right: 100%;
-	background: #2f383e;
-	color: #bdc3af;
-    font-size: 30pt ;
-}
-*/
 
 .special {
     border: none !important;
@@ -89,8 +74,6 @@ a {
 }
 
 nav {
-    /*margin-left: auto;*/
-    /*margin-right: 10%;*/
     margin-left: -30px;
     font-size: medium;
     text-align: center;
@@ -99,17 +82,16 @@ nav {
 .menubar li {
 	display: block;
 	float: left;
-	/*width: 110px;*/
 	width: 100px;
     min-height: 1.5em;
-    background: #404c51;
-    border: #3b5360 solid 2px;
+    background: #16161d;
+    border: 2px solid #2b3328;
     padding: 3px;
     margin: 4px;
 }
 
 .menubar li:hover {
-    background: #2f383e;
+    background: #76946a;
 }
 
 .menubar a {
