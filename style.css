@@ -139,3 +139,14 @@ nav {
 #nextart,#prevart {
 	max-width: 33% ;
 }
+
+/* Code blocks */
+pre > code {
+  white-space: pre-wrap;
+  word-break: keep-all;
+}
+pre > div {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
