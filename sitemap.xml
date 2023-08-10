@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://nshan.is/about/</loc>
+    <lastmod>2023-08-10T17:03:14-05:00</lastmod>
+  </url><url>
+    <loc>http://nshan.is/contact/</loc>
+    <lastmod>2023-08-10T17:00:55-05:00</lastmod>
+  </url><url>
     <loc>http://nshan.is/posts/</loc>
     <lastmod>2023-04-27T15:21:36-05:00</lastmod>
   </url><url>

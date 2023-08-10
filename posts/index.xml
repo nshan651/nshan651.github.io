@@ -11,6 +11,31 @@
 	
 	
 	<item>
+		<title>About</title>
+		<link>http://nshan.is/about/</link>
+		<pubDate>Thu, 10 Aug 2023 17:03:14 -0500</pubDate>
+		
+		<guid>http://nshan.is/about/</guid>
+		<description>&lt;h2 id=&#34;profile&#34;&gt;Profile&lt;/h2&gt;
+&lt;p&gt;Here is my profile.&lt;/p&gt;
+&lt;h3 id=&#34;programming&#34;&gt;Programming&lt;/h3&gt;
+&lt;p&gt;My interests in&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;hobbies&#34;&gt;Hobbies&lt;/h3&gt;
+&lt;p&gt;I enjoy&amp;hellip;&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Contact</title>
+		<link>http://nshan.is/contact/</link>
+		<pubDate>Thu, 10 Aug 2023 17:00:55 -0500</pubDate>
+		
+		<guid>http://nshan.is/contact/</guid>
+		<description>&lt;p&gt;Here are my social links:&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>You Don&#39;t Need a New Computer</title>
 		<link>http://nshan.is/posts/use-old-tech/</link>
 		<pubDate>Thu, 27 Apr 2023 15:21:36 -0500</pubDate>
@@ -926,8 +951,7 @@ Additional comments about closing:  We&amp;rsquo;ve been using master for 15 yea
 		<pubDate>Fri, 06 May 2022 00:20:16 -0600</pubDate>
 		
 		<guid>http://nshan.is/posts/be-a-producer/</guid>
-		<description>&lt;h1 id=&#34;be-a-producer&#34;&gt;Be a Producer&lt;/h1&gt;
-&lt;p&gt;In the age of social media and streaming services, consuming content has never been easier. Corporations have mastered minimizing the friction between you and the next serving of content. Platforms like TikTok remove as much explicit user control as possible, making it so that users can mindlessly scroll while relying on the algorithm to show them what they want to see. Everyone&amp;rsquo;s busy, and it has become so easy to come home from work or school and passively consume. However, the path of least resistance is not always the most rewarding. I want to convince you of something that I&amp;rsquo;ve finally become convinced of myself after having grown up using the internet. &lt;strong&gt;Your voice matters&lt;/strong&gt;.&lt;/p&gt;
+		<description>&lt;p&gt;In the age of social media and streaming services, consuming content has never been easier. Corporations have mastered minimizing the friction between you and the next serving of content. Platforms like TikTok remove as much explicit user control as possible, making it so that users can mindlessly scroll while relying on the algorithm to show them what they want to see. Everyone&amp;rsquo;s busy, and it has become so easy to come home from work or school and passively consume. However, the path of least resistance is not always the most rewarding. I want to convince you of something that I&amp;rsquo;ve finally become convinced of myself after having grown up using the internet. &lt;strong&gt;Your voice matters&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;No matter who you are, whether you&amp;rsquo;re a 10x developer at Google or a retired farmer, I guarantee that you have a wealth of unique experiences and knowledge that would benefit others if shared. It doesn&amp;rsquo;t matter whether it&amp;rsquo;s in the form of a guide or personal anecdotes, there are people out there who can derive value from it.&lt;/p&gt;
 &lt;p&gt;This next point might sound painfully obvious, but please just bear with me. &lt;em&gt;Everything you&amp;rsquo;ve learned comes from somewhere&lt;/em&gt;.  It&amp;rsquo;s really easy to think that something you know is obvious and that it isn&amp;rsquo;t worth sharing, but ask yourself how you know it. An electrician&amp;rsquo;s expertise of electrical wiring systems isn&amp;rsquo;t immaculately conceived knowledge. They probably learned through trade school or an apprenticeship. Don&amp;rsquo;t allow yourself to become the tail node in the chain. There are countless people who came before you, and countless others who will follow the same path.&lt;/p&gt;
 &lt;p&gt;The breadth of content out in the world is so vast that the idea of sharing your own art and ideas can seem daunting at first. Here&amp;rsquo;s a list of reasons why I was hesitant to start this, and why you might be as well.&lt;/p&gt;

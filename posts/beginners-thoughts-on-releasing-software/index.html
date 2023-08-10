@@ -1,126 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>A Beginners Thoughts on Releasing Software | nshan.is</title>
-	<link rel="canonical" href="http://nshan.is/">
-	<link rel='alternate' type='application/rss+xml' title="nshan.is RSS" href='/index.xml'>
-	<link rel='stylesheet' type='text/css' href='/style.css'>
-	<link rel="icon" href="/favicon.ico">
+	<meta charset="utf-8">
 	<meta name="description" content="I wanted to share my experience with uploading my first package, excite-cli, to the Arch User Repository (AUR). While the process was fairly straightforward (especially with this handy guide on the Arch Wiki on creating packages), I ran into several issues along the way. Most of my confusion arose from project-specific design choices or my own misunderstanding, but there were some legitimately confusing parts that I think are worth explaining. Hopefully this can serve as a quickstart and provide inspiration for releasing your own project on a package manager.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
-	<meta charset="utf-8">
+	<link rel="canonical" href="http://nshan.is/">
+	<link rel='alternate' type='application/rss+xml' title="nshan.is RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/site.css'>
+	
+        <link rel="icon" href="/favicon.ico">
+	<title>A Beginners Thoughts on Releasing Software | nshan.is</title>
 </head>
 <body>
 <main>
-<nav>
-    <ul class="menubar">
-        <li class="special">
-            <h1> nshan.is </h1>
-        </li>
-        <li>
-            <a href="/index.html">
-            <img src="https://nshan651.github.io/images/svg/lights/home.png" width=15px height=15px>
-                Home
-            </a>
-        </li>
-        <li>
-            <a>
-            <img src="https://nshan651.github.io/images/svg/lights/link.png" width=15px height=15px>
-                Links
-            </a>
-            <ul>
-                <li>
-                    <a href="https://nshan651.github.io/papers/resume.pdf">
-            <img src="https://nshan651.github.io/images/svg/lights/resume.png" width=15px height=15px>
-                        Resume 
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/nshan651">
-            <img src="https://nshan651.github.io/images/svg/lights/github.png" width=15px height=15px>
-                        Github
-                    </a>
-                </li>
-                <li>
-                    <a href="https://gitlab.com/nshan651">
-            <img src="https://nshan651.github.io/images/svg/lights/gitlab.png" width=15px height=15px>
-                        GitLab	
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/nicolas-shannon-7494051a2/">
-            <img src="https://nshan651.github.io/images/svg/lights/linkedin.png" width=15px height=15px>
-                        LinkedIn
-                    </a>
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <a href="/posts/">
-                <img src="https://nshan651.github.io/images/svg/lights/browser-page.png" width=15px height=15px>
-                Blog 
-            </a>
-        </li>
-
-        <li>
-            <a>
-                <img src="https://nshan651.github.io/images/svg/lights/documents.png" width=15px height=15px> 
-               Writings 
-            </a>
-            <ul>
-                <li>
-                    <a>
-                        Research
-                    </a>
-                </li>
-                <li>
-                    <a href="https://nshan651.github.io/creative_writing.html">
-                        Creative Writing 
-                    </a>
-                </li>
-                <li>
-                    <a>
-                       Philosophy 
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a>
-            <img src="https://nshan651.github.io/images/svg/lights/blueprint.png" width=15px height=15px>
-                Projects
-            </a>
-            <ul>
-                <li>
-                    <a href="https://nshan651.github.io/external/hemingway/templates/index.html">
-                        <img src="https://nshan651.github.io/images/svg/lights/read-book.png" width=15px height=15px>
-                       The Way of Hemingway 
-                    </a>
-                </li>
-
-            </ul>
-        </li>
-        <li>
-            <a>
-            <img src="https://nshan651.github.io/images/svg/lights/plus.png" width=15px height=15px>
-                Extras
-            <ul>
-                <li>
-                    <a href="https://nshan651.github.io/other_sites.html" width=15px height=15px>
-                        Interesting Sites
-                    </a>
-                </li>
-            </ul>
-            </a>
-        </li>
-    </ul> 
-</nav>
+        <div class="site-masthead">
+            <div class="container">
+                <nav class="nav">
+                    <a class="nav-link" href="/">Home</a> 
+                    <a class="nav-link" href="/contact">Contact</a> 
+                    <a class="nav-link" href="/posts/">Blog</a> 
+                    <a class="nav-link" href="/library/">Library</a> 
+                    <a class="nav-link" href="/projects/">Projects</a> 
+                    <a class="nav-link" href="/discover/">Discover</a>
+                    <a class="nav-link" href="/about/">About</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
 
-<div class="fzfborder">
-    <header><h1 id="tag_A Beginners Thoughts on Releasing Software"> A Beginners Thoughts on Releasing Software</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+<div class="container">
+<div class="site-post">
+<div id="content">
+
+
+<header class="site-header">
+    <div class="container">
+        
+            <h1> A Beginners Thoughts on Releasing Software </h1>
+        
+        </div>
+</header>
 
 <article>
 
@@ -252,10 +279,11 @@ Additional comments about closing:  We&rsquo;ve been using master for 15 years, 
 </article>
 
 </div>
+</div>
+</div>
 
 
 <footer> 
-    >
 	<a href="http://nshan.is/">http://nshan.is/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
 </footer>
 
