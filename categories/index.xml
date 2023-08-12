@@ -10,6 +10,17 @@
 	
 	
 	<item>
+		<title>Projects</title>
+		<link>http://nshan.is/projects/</link>
+		<pubDate>Thu, 10 Aug 2023 17:56:43 -0500</pubDate>
+		
+		<guid>http://nshan.is/projects/</guid>
+		<description>&lt;p&gt;All of the projects I have worked on.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(This page is under construction!)&lt;/strong&gt;&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>About</title>
 		<link>http://nshan.is/about/</link>
 		<pubDate>Thu, 10 Aug 2023 17:03:14 -0500</pubDate>
@@ -30,7 +41,49 @@
 		<pubDate>Thu, 10 Aug 2023 17:00:55 -0500</pubDate>
 		
 		<guid>http://nshan.is/contact/</guid>
-		<description>&lt;p&gt;Here are my social links:&lt;/p&gt;
+		<description>&lt;p&gt;Here is my contact page.&lt;/p&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nshan651&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitlab.com/nshan651&#34;&gt;GitLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/nicolas-shannon-7494051a2/&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Email: &lt;a href=&#34;mailto:public@nshan.is&#34;&gt;public@nshan.is&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;(Note that this is a placeholder, I have not yet created a public email. Please be patient!)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please feel free to email me any questions or suggestions!&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Theming Test</title>
+		<link>http://nshan.is/posts/theming-test/</link>
+		<pubDate>Thu, 10 Aug 2023 16:25:45 -0500</pubDate>
+		
+		<guid>http://nshan.is/posts/theming-test/</guid>
+		<description>&lt;p&gt;This is a test for theming my website.&lt;/p&gt;
+&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is a list of items
+&lt;ul&gt;
+&lt;li&gt;subitem 1&lt;/li&gt;
+&lt;li&gt;Another&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Another top-level item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
+&lt;p&gt;Here is a test for &lt;code&gt;inline code&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
+&lt;p&gt;And for &lt;em&gt;code blocks&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b6a0ff&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#b6a0ff&#34;&gt;as&lt;/span&gt; pd
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt;DataFrame(data&lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt;other_var)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f78fe7&#34;&gt;print&lt;/span&gt;(df)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
 </description>
 	</item>
 	
@@ -121,6 +174,39 @@ Both are known for their reliability and driver support, as well as their wide a
 &lt;li&gt;Image cred
 &lt;ul&gt;
 &lt;li&gt;IBM x40 thinkpad &lt;a href=&#34;https://notebookmarketsreview.blogspot.com/2012/04/ibm-thinkpad-x40-review-specs-and.html&#34;&gt;https://notebookmarketsreview.blogspot.com/2012/04/ibm-thinkpad-x40-review-specs-and.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Factory Farming</title>
+		<link>http://nshan.is/posts/factory-farming/</link>
+		<pubDate>Thu, 27 Apr 2023 13:57:45 -0500</pubDate>
+		
+		<guid>http://nshan.is/posts/factory-farming/</guid>
+		<description>&lt;h1 id=&#34;notes&#34;&gt;Notes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Most people, especially those in modern urban life, only come into contact with non-human animals during our meals&lt;/li&gt;
+&lt;li&gt;Factory farming stats (per year):
+&lt;ul&gt;
+&lt;li&gt;100 million cows, pigs, and sheep raised and slaughtered&lt;/li&gt;
+&lt;li&gt;5 billion chickens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Buying packaged food gives us a clinical, sanatized, and (mostly) bloodless way of consuming animal products&lt;/li&gt;
+&lt;li&gt;Origin of &amp;ldquo;meat&amp;rdquo;: any solid food, not necessarily limited to animal flesh
+&lt;ul&gt;
+&lt;li&gt;The word has evolved over time, similarly to how cereals in America are now mostly associated with the sugary breakfast food.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Idyllicism of the small, family-owned farm does not track with the reality of the coldness of industrial farming&lt;/li&gt;
+&lt;li&gt;Factory farms began their reign of control by taking over poultry production some 50 years ago&lt;/li&gt;
+&lt;li&gt;Today, 50 large corporations control virtually all poultry production&lt;/li&gt;
+&lt;li&gt;Companies with no previous experience or interest in agribusiness pivoted to farming at scale in order to diversify and to take advantage of tax concessions:
+&lt;ul&gt;
+&lt;li&gt;For these companies, farming is a calculated economic decision&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -857,60 +943,555 @@ Additional comments about closing:  We&amp;rsquo;ve been using master for 15 yea
 		<description>&lt;p&gt;Here is my personal library, organized using the Library of Congress Classification (LCC) method.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#a&#34;&gt;A: GENERAL WORKS&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#a&#34;&gt;A &amp;ndash; GENERAL WORKS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#b&#34;&gt;B &amp;ndash; PHILOSOPHY. PSYCHOLOGY. RELIGION&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#c&#34;&gt;C &amp;ndash; AUXILIARY SCIENCES OF HISTORY&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#d&#34;&gt;D &amp;ndash; WORLD HISTORY AND HISTORY OF EUROPE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#e&#34;&gt;E &amp;ndash; HISTORY OF THE AMERICAS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#f&#34;&gt;F &amp;ndash; HISTORY OF THE AMERICAS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#g&#34;&gt;G &amp;ndash; GEOGRAPHY. ANTHROPOLOGY. RECREATION&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#h&#34;&gt;H &amp;ndash; SOCIAL SCIENCES&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#j&#34;&gt;J &amp;ndash; POLITICAL SCIENCE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#k&#34;&gt;K &amp;ndash; LAW&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#l&#34;&gt;L &amp;ndash; EDUCATION&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#m&#34;&gt;M &amp;ndash; MUSIC AND BOOKS ON MUSIC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#n&#34;&gt;N &amp;ndash; FINE ARTS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#p&#34;&gt;P &amp;ndash; LANGUAGE AND LITERATURE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#q&#34;&gt;Q &amp;ndash; SCIENCE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#r&#34;&gt;R &amp;ndash; MEDICINE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#s&#34;&gt;S &amp;ndash; AGRICULTURE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#t&#34;&gt;T &amp;ndash; TECHNOLOGY&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#u&#34;&gt;U &amp;ndash; MILITARY SCIENCE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#v&#34;&gt;V &amp;ndash; NAVAL SCIENCE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#z&#34;&gt;Z &amp;ndash; BIBLIOGRAPHY. LIBRARY SCIENCE. INFORMATION RESOURCES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ac&#34;&gt;AC &amp;ndash; COLLECTIONS. SERIES. COLLECTED WORKS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ae&#34;&gt;AE &amp;ndash; ENCYCLOPEDIAS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ag&#34;&gt;AG &amp;ndash; DICTIONARIES AND OTHER GENERAL REFERENCE WORKS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ai&#34;&gt;AI &amp;ndash; INDEXES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#am&#34;&gt;AM &amp;ndash; MUSEUMS. COLLECTORS AND COLLECTING&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#an&#34;&gt;AN &amp;ndash; NEWSPAPERS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ap&#34;&gt;AP &amp;ndash; PERIODICALS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#as&#34;&gt;AS &amp;ndash; ACADEMIES AND LEARNED SOCIETIES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ay&#34;&gt;AY &amp;ndash; YEARBOOKS. ALMANACS. DIRECTORIES&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#az&#34;&gt;AZ &amp;ndash; HISTORY OF SCHOLARSHIP AND LEARNING. THE HUMANITIES&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#b&#34;&gt;B: PHILOSOPHY. PSYCHOLOGY. RELIGION&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#c&#34;&gt;C: AUXILIARY SCIENCES OF HISTORY&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#d&#34;&gt;D: WORLD HISTORY AND HISTORY OF EUROPE&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#e&#34;&gt;E: HISTORY OF THE AMERICAS&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#f&#34;&gt;F: HISTORY OF THE AMERICAS&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#g&#34;&gt;G: GEOGRAPHY. ANTHROPOLOGY. RECREATION&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#h&#34;&gt;H: SOCIAL SCIENCES&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#j&#34;&gt;J: POLITICAL SCIENCE&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#k&#34;&gt;K: LAW&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#l&#34;&gt;L: EDUCATION&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#m&#34;&gt;M: MUSIC AND BOOKS ON MUSIC&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#n&#34;&gt;N: FINE ARTS&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#p&#34;&gt;P: LANGUAGE AND LITERATURE&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#q&#34;&gt;Q: SCIENCE&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#r&#34;&gt;R: MEDICINE&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#s&#34;&gt;S: AGRICULTURE&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#t&#34;&gt;T: TECHNOLOGY&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#u&#34;&gt;U: MILITARY SCIENCE&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#v&#34;&gt;V: NAVAL SCIENCE&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#z&#34;&gt;Z: BIBLIOGRAPHY. LIBRARY SCIENCE. INFORMATION RESOURCES&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;details&gt;
+  &lt;summary&gt;&lt;a href=&#34;#o&#34;&gt;O: OTHER. NO LC CLASSIFICATION. UNCATEGORIZED&lt;/a&gt;&lt;/summary&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
 &lt;hr&gt;
 &lt;h3 id=&#34;a&#34;&gt;A &amp;ndash; GENERAL WORKS&lt;/h3&gt;
+&lt;h4 id=&#34;ac&#34;&gt;AC &amp;ndash; COLLECTIONS. SERIES. COLLECTED WORKS&lt;/h4&gt;
+&lt;h4 id=&#34;ae&#34;&gt;AE &amp;ndash; ENCYCLOPEDIAS&lt;/h4&gt;
+&lt;h4 id=&#34;ag&#34;&gt;AG &amp;ndash; DICTIONARIES AND OTHER GENERAL REFERENCE WORKS&lt;/h4&gt;
+&lt;h4 id=&#34;ai&#34;&gt;AI &amp;ndash; INDEXES&lt;/h4&gt;
+&lt;h4 id=&#34;am&#34;&gt;AM &amp;ndash; MUSEUMS. COLLECTORS AND COLLECTING&lt;/h4&gt;
+&lt;h4 id=&#34;an&#34;&gt;AN &amp;ndash; NEWSPAPERS&lt;/h4&gt;
+&lt;h4 id=&#34;ap&#34;&gt;AP &amp;ndash; PERIODICALS&lt;/h4&gt;
+&lt;h4 id=&#34;as&#34;&gt;AS &amp;ndash; ACADEMIES AND LEARNED SOCIETIES&lt;/h4&gt;
+&lt;h4 id=&#34;ay&#34;&gt;AY &amp;ndash; YEARBOOKS. ALMANACS. DIRECTORIES&lt;/h4&gt;
+&lt;h4 id=&#34;az&#34;&gt;AZ &amp;ndash; HISTORY OF SCHOLARSHIP AND LEARNING. THE HUMANITIES&lt;/h4&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;b&#34;&gt;B &amp;ndash; PHILOSOPHY. PSYCHOLOGY. RELIGION&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;./read/hesse_hermann_steppenwolf&#34;&gt;Link Title Here&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Singer, Peter &amp;ndash; &lt;em&gt;Animal Liberation&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;c&#34;&gt;C &amp;ndash; AUXILIARY SCIENCES OF HISTORY&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Osserman, Robert &amp;ndash; &lt;em&gt;Poetry of the Universe&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;d&#34;&gt;D &amp;ndash; WORLD HISTORY AND HISTORY OF EUROPE&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Procopius &amp;ndash; &lt;em&gt;The Secret History&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;e&#34;&gt;E &amp;ndash; HISTORY OF THE AMERICAS&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;f&#34;&gt;F &amp;ndash; HISTORY OF THE AMERICAS&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;g&#34;&gt;G &amp;ndash; GEOGRAPHY. ANTHROPOLOGY. RECREATION&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;h&#34;&gt;H &amp;ndash; SOCIAL SCIENCES&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Rothbard, Murray &amp;ndash; &lt;em&gt;Anatomy of the State&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;j&#34;&gt;J &amp;ndash; POLITICAL SCIENCE&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Levin, Richard &amp;ndash; &lt;em&gt;The Work of the University&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Chomsky, Noam &amp;ndash; &lt;em&gt;The Prosperous Few and the Restless Many&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;k&#34;&gt;K &amp;ndash; LAW&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;l&#34;&gt;L &amp;ndash; EDUCATION&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;m&#34;&gt;M &amp;ndash; MUSIC AND BOOKS ON MUSIC&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;n&#34;&gt;N &amp;ndash; FINE ARTS&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;p&#34;&gt;P &amp;ndash; LANGUAGE AND LITERATURE&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Bulgakov, Mikhail &amp;ndash; &lt;em&gt;The Master and Margarita&lt;/em&gt;&lt;/li&gt;
@@ -920,13 +1501,29 @@ Additional comments about closing:  We&amp;rsquo;ve been using master for 15 yea
 &lt;li&gt;Pynchon, Thomas &amp;ndash; &lt;em&gt;Gravity&amp;rsquo;s Rainbow&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Roth, Philip &amp;ndash; &lt;em&gt;Goodbye, Columbus and Five Short Stories&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;q&#34;&gt;Q &amp;ndash; SCIENCE&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;strong&gt;On LISP: Advanced Techniques for Common Lisp&lt;/strong&gt;. Graham, Paul (1993).&lt;/dt&gt;
+&lt;dd&gt;QA76.73.C28, ISBN:9780130305527&lt;/dd&gt;
+&lt;dt&gt;&lt;strong&gt;Animal Liberation&lt;/strong&gt;. Singer, Peter (2002).&lt;/dt&gt;
+&lt;dd&gt;HV4708.S56, ISBN:9780060011574&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;r&#34;&gt;R &amp;ndash; MEDICINE&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;s&#34;&gt;S &amp;ndash; AGRICULTURE&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;t&#34;&gt;T &amp;ndash; TECHNOLOGY&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;u&#34;&gt;U &amp;ndash; MILITARY SCIENCE&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;v&#34;&gt;V &amp;ndash; NAVAL SCIENCE&lt;/h3&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;z&#34;&gt;Z &amp;ndash; BIBLIOGRAPHY. LIBRARY SCIENCE. INFORMATION RESOURCES&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;o&#34;&gt;O: NO LC CLASSIFICATION. UNCATEGORIZED&lt;/h3&gt;
+&lt;hr&gt;
 </description>
 	</item>
 	
