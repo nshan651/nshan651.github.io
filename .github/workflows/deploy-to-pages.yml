@@ -30,8 +30,12 @@ jobs:
         run: |
           git checkout -b pages
           git pull origin main 
+          # Delete everything except pages to deploy
           find . -maxdepth 1 ! -name 'public' -exec rm -rf {} \;
-          mv public/* .
+          # Re-name public directory so that the public sub-dir can also be moved
+          mv public tmp 
+          mv tmp/* .
+          rm -rf tmp
 
           git add -A 
           git commit -m "Deploy to pages"
