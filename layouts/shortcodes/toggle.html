@@ -1,0 +1,20 @@
+<!-- <details> -->
+<!--   {{ .Inner }} -->
+<!-- </details> -->
+
+<!-- <details> -->
+<!--   <summary>{{ .Get "title" }}</summary> -->
+<!--   {{ .Inner }} -->
+<!-- </details> -->
+
+
+<!-- <details> -->
+<!--   <summary><a href="#{{ .Get "title" | urlize }}">{{ .Get "title" }}</a></summary> -->
+<!--   <div>{{ .Inner }}</div> -->
+<!-- </details> -->
+
+
+<details>
+  <summary><a href="#{{ .Get "title" | replaceRE "^(.*?):.*$" "$1" | lower }}">{{ .Get "title" }}</a></summary>
+  <div>{{ .Inner }}</div>
+</details>
