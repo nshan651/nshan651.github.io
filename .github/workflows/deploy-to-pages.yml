@@ -1,0 +1,33 @@
+name: Deploy to Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Hugo site
+        run: hugo
+
+      - name: Set up Git
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Commit Hugo build to pages branch
+        run: |
+          git checkout -b pages
+          git pull origin main 
+          find . -maxdepth 1 ! -name 'public' -exec rm -rf {} \;
+          mv public/* .
+
+          git add -A 
+          git commit -m "Deploy to pages"
+          git push -f origin pages
