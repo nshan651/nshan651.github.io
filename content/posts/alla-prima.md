@@ -1,7 +1,7 @@
 ---
 title: "Alla Prima"
 date: 2023-10-21T16:57:42-05:00
-draft: true 
+draft: false
 ---
 
 There's an article I read recently from Emacs package maintainer and writer Protesilaos, [On honesty and my creative process](https://protesilaos.com/commentary/2022-08-29-honesty-creative-process/), where he goes over his process for coming up with new ideas. In it he discusses the concept of *alla prima*, which means "at first attempt," or "wet on wet." It's an approach in painting where the artist applies each layer of paint to the canvas without letting the previous layer dry. Paintings created in this way were typically finished in a single session. Traditionally, artists would use a layering approach, where they applied one layer of paint on top of another after letting the previous layer dry.
