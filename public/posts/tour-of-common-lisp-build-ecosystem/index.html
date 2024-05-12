@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8">
+	<meta name="description" content="Recently, I&rsquo;ve been trying to learn Elisp and Common Lisp. I&rsquo;ve been curious about the Lisp family of programming languages for quite a while, particularly because of their unique set of features such as treating code as data (homoiconicity) and the powerful macro system. I&rsquo;ve also been adding to my Emacs configuration quite a bit lately, so it would be great to get a bit more comfortable writing Elisp.
+I&rsquo;d like to present a practical guide on setting up your first Common Lisp package.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="http://localhost:1313/">
+	<link rel='alternate' type='application/rss+xml' title="nshan.is RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/site.css'>
+	<link rel='stylesheet' type='text/css' href='/syntax.css'>
+	
+        <link rel="icon" href="/favicon.ico">
+	<title>The Hitchhiker&#39;s Guide to Building Common Lisp Applications | nshan.is</title>
+</head>
+<body>
+<main>
+        <div class="site-masthead">
+            <div class="container">
+                <nav class="nav">
+                    <a class="nav-link" href="/">Home</a> 
+                    <a class="nav-link" href="/contact">Contact</a> 
+                    <a class="nav-link" href="/posts/">Blog</a> 
+                    <a class="nav-link" href="/library/">Library</a> 
+                    <a class="nav-link" href="/projects/">Projects</a> 
+                    <a class="nav-link" href="/discover/">Discover</a>
+                    <a class="nav-link" href="/about/">About</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+<div class="container">
+<div class="site-post">
+<div id="content">
+
+
+<header class="site-header">
+    <div class="container">
+        
+            <h1> The Hitchhiker&#39;s Guide to Building Common Lisp Applications </h1>
+        
+        </div>
+</header>
+
+<article>
+
+<p>Recently, I&rsquo;ve been trying to learn Elisp and Common Lisp. I&rsquo;ve been curious about the Lisp family of programming languages for quite a while, particularly because of their unique set of features such as treating code as data (<a href="https://en.wikipedia.org/wiki/Homoiconicity">homoiconicity</a>) and the powerful <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)#List_structure_of_program_code;_exploitation_by_macros_and_compilers">macro system</a>. I&rsquo;ve also been adding to my Emacs configuration quite a bit lately, so it would be great to get a bit more comfortable writing Elisp.</p>
+<p>I&rsquo;d like to present a practical guide on setting up your first Common Lisp package. I won&rsquo;t be focusing on language syntax or semantics, as I think there are already plenty of instructive videos and blog posts (links to a couple below). I&rsquo;ll assume you at least have a basic understanding of Lisp code. As a new user, I had a hard time finding practical guides on actually setting up a project, so hopefully this can serve as an end-to-end installation and setup guide.</p>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#installation-and-configuration">Installation and Configuration</a>
+      <ul>
+        <li><a href="#sbcl">SBCL</a></li>
+        <li><a href="#packaging-with-quicklisp">Packaging with Quicklisp</a></li>
+        <li><a href="#the-asdf-build-system">The ASDF Build System</a></li>
+      </ul>
+    </li>
+    <li><a href="#setting-up-a-project">Setting Up a Project</a>
+      <ul>
+        <li><a href="#compiling-binaries">Compiling Binaries</a></li>
+        <li><a href="#additional-notes-on-compilation">Additional Notes on Compilation</a></li>
+      </ul>
+    </li>
+    <li><a href="#notes">NOTES</a>
+      <ul>
+        <li><a href="#project-testing">Project Testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#closing-thoughts">Closing Thoughts</a></li>
+    <li><a href="#helpful-resources">Helpful Resources</a></li>
+    <li><a href="#bootstrap-script-to-set-up-the-above-recommendations">Bootstrap Script to Set Up the Above Recommendations</a></li>
+  </ul>
+</nav>
+<h2 id="installation-and-configuration">Installation and Configuration</h2>
+<h3 id="sbcl">SBCL</h3>
+<p>The first thing you&rsquo;ll want to do is to choose a Common Lisp distribution. There are several <a href="https://en.wikipedia.org/wiki/Category:Common_Lisp_implementations">implementations</a>, but I opted to go with <a href="http://www.sbcl.org/">Steel Bank Common Lisp</a>, as it&rsquo;s generally considered to be the most popular.</p>
+<p>You can choose to build it from source, or install it with your favorite package manager. I&rsquo;m on Arch (btw), so I&rsquo;ll use <code>pacman</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#a8a8a8"># Arch</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S sbcl
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a8a8a8"># Debian</span>
+</span></span><span style="display:flex;"><span>sudo apt install sbcl
+</span></span></code></pre></div><p>One mildly annoying thing about SBCL (and most of the following programs) is that it doesn&rsquo;t respect the XDG base spec. I&rsquo;m sure most people couldn&rsquo;t care less about polluting their <code>$HOME</code> directory with dotfiles, but I like a clean home, so I&rsquo;ll also show you how to change the configuration locations. For SBCL, just add the following to the system-wide config, <code>/etc/sbclrc</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#feacd0">require</span> <span style="color:#79a8ff">:asdf</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#f78fe7">setf</span> <span style="color:#00d3d0">sb-ext:*userinit-pathname-function*</span>
+</span></span><span style="display:flex;"><span>      (<span style="color:#f78fe7">lambda</span> () (<span style="color:#00d3d0">uiop:xdg-config-home</span> <span style="color:#00bcff">#P&#34;sbcl/sbclrc&#34;</span>)))
+</span></span></code></pre></div><h3 id="packaging-with-quicklisp">Packaging with Quicklisp</h3>
+<p><a href="https://www.quicklisp.org/beta/">Quicklisp</a> is SBCL&rsquo;s main library manager. Although quicklisp is technically &ldquo;unofficial&rdquo;, it works with most implementations of Common Lisp, and is essentially the <em>de facto</em> library manager. It&rsquo;s also apparently still in beta after nearly 15 years of development, but I&rsquo;d still say it&rsquo;s further along than other proposed solutions such as <a href="https://roswell.github.io/">Roswell</a>. I do plan on digging deeper into Roswell in the future, but for now let&rsquo;s stick with quicklisp for packaging.</p>
+<p>Once again, I would recommend installing quicklisp with a package manager. And just like SBCL, quicklisp slaps the <code>~/quicklisp</code> directory right in your your <code>$HOME</code> directory (and it doesn&rsquo;t even have the courtesy of making it a hidden dir).</p>
+<p>Fortunately, the files in <code>~/quicklisp</code> are self-contained, so moving it somewhere more sensible is easy. First, move the <code>~/quicklisp</code> directory to the desired location. Next, load the <code>setup.lisp</code> file contained by running <code>sbcl --load setup.lisp</code> from within the <code>~/quicklisp</code> directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a8a8a8">;; From within the REPL, run the following:</span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">*</span> (<span style="color:#00d3d0">ql:add-to-init-file</span>)
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">I</span> <span style="color:#00d3d0">will</span> <span style="color:#feacd0">append</span> <span style="color:#b6a0ff">the</span> <span style="color:#00d3d0">following</span> <span style="color:#00d3d0">lines</span> <span style="color:#00d3d0">to</span> <span style="color:#00bcff">#P&#34;/home/nshan651/.config/sbclrc&#34;</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a8a8a8">;;; The following lines added by ql:add-to-init-file:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00d3d0">#-</span><span style="color:#00d3d0">quicklisp</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#b6a0ff">let</span> ((<span style="color:#00d3d0">quicklisp-init</span> (<span style="color:#feacd0">merge-pathnames</span> <span style="color:#79a8ff">&#34;.local/opt/quicklisp/setup.lisp&#34;</span>
+</span></span><span style="display:flex;"><span>                                         (<span style="color:#feacd0">user-homedir-pathname</span>))))
+</span></span><span style="display:flex;"><span>    (<span style="color:#f78fe7">when</span> (<span style="color:#feacd0">probe-file</span> <span style="color:#00d3d0">quicklisp-init</span>)
+</span></span><span style="display:flex;"><span>      (<span style="color:#feacd0">load</span> <span style="color:#00d3d0">quicklisp-init</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">Press</span> <span style="color:#00d3d0">Enter</span> <span style="color:#00d3d0">to</span> <span style="color:#00d3d0">continue.</span>
+</span></span></code></pre></div><p>There&rsquo;s one more thing we have to do before we can move on. We need to tell quicklisp where our lisp projects are located. By default, quicklisp will search in <code>./quicklisp/local-projects</code> directory. I like to throw all my coding projects into <code>~/git</code>, so we need to add one more line to our <code>.sbclrc</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a8a8a8">;;; Tell quicklisp to search ~/git/ dir for CL projects.</span>
+</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">;;; Note that the trailing &#34;/&#34; is required.</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f78fe7">push</span> <span style="color:#79a8ff">&#34;~/git/&#34;</span> <span style="color:#00d3d0">ql:*local-project-directories*</span>)
+</span></span></code></pre></div><h3 id="the-asdf-build-system">The ASDF Build System</h3>
+<p>Now that we have external dependencies covered, we need <a href="https://asdf.common-lisp.dev/asdf.html">ASDF</a> for managing system dependencies at the project level. ASDF provides a framework for loading Lisp <em>systems</em>, which are just collections of related Lisp files.</p>
+<p>Unlike quicklisp, ASDF is included with SBCL and most other Common Lisp implementations. By default, ASDF will look for systems in the <code>~/common-lisp</code> directory. You know the drill by now, let&rsquo;s change that! We need to create a new file located at <code>~/.config/common-lisp/source-registry.conf.d/50-user.conf</code>.</p>
+<p>Then, just copy in the following, replacing the path with the full path to your projects directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#79a8ff">:tree</span> <span style="color:#79a8ff">&#34;/home/nshan651/git/&#34;</span>)
+</span></span></code></pre></div><p>That&rsquo;s all! Just a word of caution, if you&rsquo;re following the <a href="https://asdf.common-lisp.dev/asdf.html#Configurations">documentation</a>, they suggest that the source registry can also be configured from the user file <code>~/.config/common-lisp/source-registry.conf</code>. For some reason it was only able to read my config when I placed it in the *.d sub-directory, but maybe I&rsquo;m missing something.</p>
+<h2 id="setting-up-a-project">Setting Up a Project</h2>
+<p>The average project&rsquo;s structure should look something like this:</p>
+<pre tabindex="0"><code>my-project/
+  src/
+    my-project.lisp
+  t/
+    my-project.lisp
+  .gitignore
+  README.md
+  my-project.asd
+</code></pre><ul>
+<li>Note that the common convention is to name the tests folder &ldquo;t&rdquo;.</li>
+</ul>
+<p>The main point of entry into our program where we will define our system is the *.asd file. Sometimes this will be broken up into two (one file for src and the other for tests), but putting everything in one file is fine for small projects. Let&rsquo;s go ahead and define a system for our project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#00d3d0">defsystem</span> <span style="color:#79a8ff">&#34;rcv&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:author</span> <span style="color:#79a8ff">&#34;nshan651 &lt;public.nshan651.com&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:license</span> <span style="color:#79a8ff">&#34;AGPL 3.0&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:version</span> <span style="color:#79a8ff">&#34;0.1&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:homepage</span> <span style="color:#79a8ff">&#34;https://github.com/nshan651/rcv&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:bug-tracker</span> <span style="color:#79a8ff">&#34;https://github.com/nshan651/rcv/issues&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:source-control</span> (<span style="color:#79a8ff">:git</span> <span style="color:#79a8ff">&#34;git@github.com/nshan651/rcv.git&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:description</span> <span style="color:#79a8ff">&#34;Ranked-choice voting command-line tool.&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:depends-on</span> (<span style="color:#79a8ff">&#34;clingon&#34;</span>
+</span></span><span style="display:flex;"><span>	           <span style="color:#79a8ff">&#34;cl-csv&#34;</span>
+</span></span><span style="display:flex;"><span>	           <span style="color:#79a8ff">&#34;uiop&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:components</span> ((<span style="color:#79a8ff">:module</span> <span style="color:#79a8ff">&#34;src&#34;</span>
+</span></span><span style="display:flex;"><span>	            <span style="color:#79a8ff">:serial</span> t
+</span></span><span style="display:flex;"><span>		        <span style="color:#79a8ff">:components</span> ((<span style="color:#79a8ff">:file</span> <span style="color:#79a8ff">&#34;main&#34;</span>))))
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:long-description</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00d3d0">#.</span>(<span style="color:#00d3d0">uiop:read-file-string</span>
+</span></span><span style="display:flex;"><span>     (<span style="color:#00d3d0">uiop:subpathname</span> *load-pathname* <span style="color:#79a8ff">&#34;README.md&#34;</span>))
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:in-order-to</span> ((<span style="color:#00d3d0">test-op</span> (<span style="color:#00d3d0">test-op</span> <span style="color:#79a8ff">&#34;rcv/tests&#34;</span>))))
+</span></span></code></pre></div><p>Most of the keyword definitions are self-explanatory, but there are a couple things to note. The dependencies this project happens to be using are <a href="https://github.com/dnaeon/clingon">clingon</a> (command-line options parser), <a href="https://github.com/AccelerationNet/cl-csv">cl-csv</a> (csv parser), and <a href="https://github.com/fare/asdf/blob/master/uiop/README.md">uiop</a> (portability layer on top of ASDF with extra utilities). You will likely have different and/or additional dependencies, so add them to <code>:depends-on</code>.</p>
+<ul>
+<li><code>:serial t</code>
+<ul>
+<li>For your own component modules (any sub-directories in your project containing relevant lisp code), you can specify the <code>:serial t</code> key, which tells ASDF to treat each subsequent file as depending on the previous ones. To put it simply, it loads your lisp files sequentially. My project only has one file, so this isn&rsquo;t necessary just yet. However, as your project continues to grow, <code>:serial</code> can be a useful shorthand for dependency management.</li>
+</ul>
+</li>
+<li><code>:long-description</code>
+<ul>
+<li>ASDF will embed the contents of the <code>README.md</code> into the <a href="https://lisp-lang.org/learn/writing-libraries#defining-systems">system definition at read-time</a>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="compiling-binaries">Compiling Binaries</h3>
+<p>One thing I like to consider when writing tools is portability, and compiling programs into binary executables can be a great way to distribute code. The nuances of creating self-contained executables can be quite complex, so I&rsquo;ll try to keep it brief and highlight a couple important things to look out for. For a more comprehensive breakdown, read <a href="https://lispcookbook.github.io/cl-cookbook/scripting.html">this page from the Lisp Cookbook</a>.</p>
+<p>In the <code>defsystem</code> we&rsquo;ve just created in <code>rcv.asd</code>, add the following three directives.</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#79a8ff">:build-operation</span> <span style="color:#79a8ff">&#34;program-op&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-pathname</span> <span style="color:#79a8ff">&#34;bin/rcv&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:entry-point</span> <span style="color:#79a8ff">&#34;rcv::main&#34;</span>
+</span></span></code></pre></div><p>Now we can build an executable from SBCL by loading our system with <code>(ql:quickload :rcv)</code> and calling <code>(asdf:make :rcv)</code>. Keep in mind that saving images or executables <strong>does not work when done from an mREPL such as SLIME or Sly</strong>. Executables typically need to be <a href="https://stackoverflow.com/questions/47888877/sbcl-building-a-standalone-executable">compiled from sbcl directly</a>.</p>
+<p>It&rsquo;s still a little cumbersome to spin up an sbcl repl every time we want to test our executable, so let&rsquo;s create a Makefile.</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#a8a8a8"># Binary executable.
+</span></span></span><span style="display:flex;"><span><span style="color:#a8a8a8"></span><span style="color:#00d3d0">BIN</span> <span style="color:#00d3d0">:=</span> rcv
+</span></span><span style="display:flex;"><span><span style="color:#a8a8a8"># Lisp implementation.
+</span></span></span><span style="display:flex;"><span><span style="color:#a8a8a8"></span><span style="color:#00d3d0">LISP</span> <span style="color:#00d3d0">:=</span> sbcl
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">.PHONY</span><span style="color:#00d3d0">:</span> all run
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">all</span><span style="color:#00d3d0">:</span> 
+</span></span><span style="display:flex;"><span>	<span style="color:#b6a0ff">$(</span>LISP<span style="color:#b6a0ff">)</span>	--non-interactive <span style="color:#79a8ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#79a8ff"></span>		--eval <span style="color:#79a8ff">&#39;(ql:quickload :rcv)&#39;</span> <span style="color:#79a8ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#79a8ff"></span>		--eval <span style="color:#79a8ff">&#39;(asdf:make :rcv)&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">run</span><span style="color:#00d3d0">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a8a8a8"># Note: &#39;@&#39; suppresses the echoing of the command itself.</span>
+</span></span><span style="display:flex;"><span>	@ ./bin/<span style="color:#b6a0ff">$(</span>BIN<span style="color:#b6a0ff">)</span>
+</span></span></code></pre></div><p>Let&rsquo;s create additional rules for <a href="https://man7.org/linux/man-pages/man1/install.1.html">installing</a> and uninstalling the freshly-minted executable binary to <code>/usr/local/bin</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#feacd0">install</span><span style="color:#00d3d0">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a8a8a8"># Note: Create /usr/bin/local if it doesn&#39;t exist;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a8a8a8">#       Sets read, write, and execute priviledges for the owner</span>
+</span></span><span style="display:flex;"><span>	install -Dm755 ./bin/<span style="color:#b6a0ff">$(</span>BIN<span style="color:#b6a0ff">)</span> <span style="color:#b6a0ff">$(</span>DESTDIR<span style="color:#b6a0ff">)</span>/usr/local/bin/<span style="color:#b6a0ff">$(</span>BIN<span style="color:#b6a0ff">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">uninstall</span><span style="color:#00d3d0">:</span>
+</span></span><span style="display:flex;"><span>	rm -f <span style="color:#b6a0ff">$(</span>DESTDIR<span style="color:#b6a0ff">)</span>/usr/local/bin/<span style="color:#b6a0ff">$(</span>BIN<span style="color:#b6a0ff">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">clean</span><span style="color:#00d3d0">:</span> uninstall
+</span></span><span style="display:flex;"><span>	rm -f ./bin/<span style="color:#b6a0ff">$(</span>BIN<span style="color:#b6a0ff">)</span>
+</span></span></code></pre></div><p>Lastly, I highly building with SBCL&rsquo;s <a href="https://lispcookbook.github.io/cl-cookbook/scripting.html#building-a-smaller-binary-with-sbcls-core-compression">core compression</a> to <strong>greatly</strong> reduce the size of your binaries. It costs virtually nothing, and is quite straightforward to include.</p>
+<p>First, check if your SBCL was built with core compression.</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#feacd0">find</span> <span style="color:#79a8ff">:sb-core-compression</span> *features*)
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:SB-CORE-COMPRESSION</span>
+</span></span></code></pre></div><p>Now simply add the following to the end of your .asd (make sure it&rsquo;s outside of an <code>defsystem</code> calls):</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#00d3d0">#+</span><span style="color:#00d3d0">sb-core-compression</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f78fe7">defmethod</span> <span style="color:#00d3d0">asdf:perform</span> ((<span style="color:#00d3d0">o</span> <span style="color:#00d3d0">asdf:image-op</span>) (<span style="color:#00d3d0">c</span> <span style="color:#00d3d0">asdf:system</span>))
+</span></span><span style="display:flex;"><span>  (<span style="color:#00d3d0">uiop:dump-image</span> (<span style="color:#00d3d0">asdf:output-file</span> <span style="color:#00d3d0">o</span> <span style="color:#00d3d0">c</span>)
+</span></span><span style="display:flex;"><span>                   <span style="color:#79a8ff">:executable</span> t
+</span></span><span style="display:flex;"><span>                   <span style="color:#79a8ff">:compression</span> t))
+</span></span></code></pre></div><p>As far as I can tell, there isn&rsquo;t any reason to <em>not</em> build with core compression, unless the handful of milliseconds it adds to the startup time really is a deal-breaker for your application. In this case, it reduced our executable size from 69 MB to just 14 MB, at a cost of 80 ms. Keep in mind that this is just the <em>startup time</em>, so I imagine that as your program grows in complexity, this trade-off begins to look even more appealing.</p>
+<h3 id="additional-notes-on-compilation">Additional Notes on Compilation</h3>
+<p>There&rsquo;s an important distinction between executables and images in Common Lisp. Lisp images are snapshots of a running Lisp environment, including not only compiled code, but also the current state of the Lisp system, including loaded libraries, defined functions and variables, and the current execution context. While images are incredibly useful for batch computing tasks and development, they&rsquo;re not typically used for deployment as they are naturally quite a bit larger and slower than a traditional binary.</p>
+<p>An issue you may come across is in dealing with dynamic library dependencies. Standalone executables built with shared library dependencies may not necessarily work on all machines out of the box. For these situations, I recommend using <a href="https://github.com/Shinmera/deploy">deploy</a>, which auto-detects foreign dependencies and places them in the <code>bin/</code> directory of your project. Fortunately our project doesn&rsquo;t have any foreign dependencies, but adding <code>deploy</code> is a simple matter of changing a few lines in the asd file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; From the Lisp Cookbook:</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:defsystem-depends-on</span> (<span style="color:#79a8ff">:deploy</span>)              <span style="color:#a8a8a8">; (ql:quickload &#34;deploy&#34;) before</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-operation</span> <span style="color:#79a8ff">&#34;deploy-op&#34;</span>                 <span style="color:#a8a8a8">; instead of &#34;program-op&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-pathname</span> <span style="color:#79a8ff">&#34;my-application-name&#34;</span>        <span style="color:#a8a8a8">; doesn&#39;t change</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:entry-point</span> <span style="color:#79a8ff">&#34;my-package:my-start-function&#34;</span>  <span style="color:#a8a8a8">; doesn&#39;t change</span>
+</span></span></code></pre></div><h2 id="notes">NOTES</h2>
+<ul>
+<li>Cannot save an image with multiple threads running:
+<ul>
+<li><a href="http://www.sbcl.org/manual/#Saving-a-Core-Image">http://www.sbcl.org/manual/#Saving-a-Core-Image</a></li>
+<li><a href="https://stackoverflow.com/questions/47888877/sbcl-building-a-standalone-executable">https://stackoverflow.com/questions/47888877/sbcl-building-a-standalone-executable</a></li>
+</ul>
+</li>
+<li>FASL files:
+<ul>
+<li><a href="https://www.common-lisp.com/support/documentation/current/compiling.html#22-fasl-files">https://www.common-lisp.com/support/documentation/current/compiling.html#22-fasl-files</a></li>
+</ul>
+</li>
+<li>CL cookbook on scripting and binaries:
+<ul>
+<li><a href="https://lispcookbook.github.io/cl-cookbook/scripting.html">https://lispcookbook.github.io/cl-cookbook/scripting.html</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="project-testing">Project Testing</h3>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#00d3d0">defsystem</span> <span style="color:#79a8ff">&#34;rcv/tests&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:description</span> <span style="color:#79a8ff">&#34;Test suite for rcv.&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:author</span> <span style="color:#79a8ff">&#34;Nick Shannon &lt;public.nshan651.com&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:license</span> <span style="color:#79a8ff">&#34;AGPL 3.0&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:version</span> <span style="color:#79a8ff">&#34;0.1&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:depends-on</span> (<span style="color:#79a8ff">&#34;rcv&#34;</span>
+</span></span><span style="display:flex;"><span>	       <span style="color:#79a8ff">&#34;fiveam&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">:components</span> ((<span style="color:#79a8ff">:module</span> <span style="color:#79a8ff">&#34;t&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#79a8ff">:serial</span> t
+</span></span><span style="display:flex;"><span>                <span style="color:#79a8ff">:components</span> ((<span style="color:#79a8ff">:file</span> <span style="color:#79a8ff">&#34;main&#34;</span>)))))
+</span></span></code></pre></div><h4 id="5am">5am</h4>
+<h2 id="closing-thoughts">Closing Thoughts</h2>
+<h2 id="helpful-resources">Helpful Resources</h2>
+<ul>
+<li><a href="https://lisp-lang.org/style-guide/">The Common Lisp Style Guide</a></li>
+<li><a href="https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/">A Road to Common Lisp</a></li>
+<li><a href="https://stevelosh.com/blog/2021/03/small-common-lisp-cli-programs/">Small Common Lisp CLI Programs</a></li>
+<li><a href="https://lisp-lang.org/learn/writing-libraries">Writing Libraries</a></li>
+<li><a href="https://www.common-lisp.com/support/documentation/current/compiling.html#22-fasl-files">https://www.common-lisp.com/support/documentation/current/compiling.html#22-fasl-files</a></li>
+<li><a href="https://www.lispworks.com/documentation/lw60/LW/html/lw-95.htm">https://www.lispworks.com/documentation/lw60/LW/html/lw-95.htm</a></li>
+</ul>
+<h2 id="bootstrap-script-to-set-up-the-above-recommendations">Bootstrap Script to Set Up the Above Recommendations</h2>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#a8a8a8">#!/bin/sh
+</span></span></span></code></pre></div>
+
+
+</article>
+
+</div>
+</div>
+</div>
+
+
+<footer> 
+	<a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+
+</main>
+</body>
+</html>

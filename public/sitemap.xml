@@ -2,47 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://nshan.is/projects/</loc>
+    <loc>http://localhost:1313/content/posts/test/</loc>
+    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/content/test/</loc>
+    <lastmod>2024-04-17T16:26:47-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/deep-dive-on-lisp-compilation/</loc>
+    <lastmod>2024-04-22T17:25:46-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-04-22T17:25:46-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/tour-of-common-lisp-build-ecosystem/</loc>
+    <lastmod>2024-04-12T11:22:34-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/alla-prima/</loc>
+    <lastmod>2023-10-21T16:57:42-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/burden-of-social-flexibility/</loc>
+    <lastmod>2023-10-21T15:21:40-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/recycling/</loc>
+    <lastmod>2023-09-15T13:40:57-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/stigmatization-of-nudity/</loc>
+    <lastmod>2023-09-02T13:02:54-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2023-08-10T17:56:43-05:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2023-08-10T17:03:14-05:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2023-08-10T17:00:55-05:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/posts/</loc>
+    <loc>http://localhost:1313/posts/use-old-tech/</loc>
     <lastmod>2023-04-27T15:21:36-05:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/posts/use-old-tech/</loc>
-    <lastmod>2023-04-27T15:21:36-05:00</lastmod>
-  </url><url>
-    <loc>http://nshan.is/posts/worst-code/</loc>
+    <loc>http://localhost:1313/posts/worst-code/</loc>
     <lastmod>2023-03-05T17:16:20-06:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/posts/yt-dlp/</loc>
+    <loc>http://localhost:1313/posts/yt-dlp/</loc>
     <lastmod>2023-01-02T00:20:16-06:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/discover/</loc>
+    <loc>http://localhost:1313/discover/</loc>
     <lastmod>2022-12-22T22:29:22-06:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/posts/beginners-thoughts-on-releasing-software/</loc>
+    <loc>http://localhost:1313/posts/beginners-thoughts-on-releasing-software/</loc>
     <lastmod>2022-12-15T00:20:16-06:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/library/</loc>
+    <loc>http://localhost:1313/library/</loc>
     <lastmod>2022-12-10T11:14:14-06:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-11-09T22:05:11-06:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/posts/how-do-you-eat-an-elephant/</loc>
+    <loc>http://localhost:1313/posts/how-do-you-eat-an-elephant/</loc>
     <lastmod>2022-10-15T00:25:35-06:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/posts/be-a-producer/</loc>
+    <loc>http://localhost:1313/posts/be-a-producer/</loc>
     <lastmod>2022-05-06T00:20:16-06:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
   </url><url>
-    <loc>http://nshan.is/tags/</loc>
+    <loc>http://localhost:1313/content/</loc>
+    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/emacs/</loc>
+    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hugo/</loc>
+    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/org/</loc>
+    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/test/</loc>
   </url>
 </urlset>

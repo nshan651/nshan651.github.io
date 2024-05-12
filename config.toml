@@ -1,5 +1,5 @@
 title = 'nshan.is'
-baseURL = 'http://nshan.is/'
+baseURL = 'https://nshan651.github.io/'
 languageCode = 'en-us'
 
 [params]
@@ -21,3 +21,11 @@ languageCode = 'en-us'
   [markup.highlight]
     style = 'modus-vivendi'
     tabWidth = 4
+    useHLJS = true
+    pygmentsCodeFences = true
+    pygmentsUseClasses = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      autoHeadingID = true
+      toc = true
+      [markup.goldmark.renderer]

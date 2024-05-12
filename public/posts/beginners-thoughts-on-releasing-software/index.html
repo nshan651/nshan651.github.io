@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8">
 	<meta name="description" content="I wanted to share my experience with uploading my first package, excite-cli, to the Arch User Repository (AUR). While the process was fairly straightforward (especially with this handy guide on the Arch Wiki on creating packages), I ran into several issues along the way. Most of my confusion arose from project-specific design choices or my own misunderstanding, but there were some legitimately confusing parts that I think are worth explaining. Hopefully this can serve as a quickstart and provide inspiration for releasing your own project on a package manager.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="http://nshan.is/">
+	<link rel="canonical" href="http://localhost:1313/">
 	<link rel='alternate' type='application/rss+xml' title="nshan.is RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/site.css'>
+	<link rel='stylesheet' type='text/css' href='/syntax.css'>
 	
         <link rel="icon" href="/favicon.ico">
 	<title>A Beginners Thoughts on Releasing Software | nshan.is</title>
@@ -174,7 +175,7 @@ Additional comments about closing:  We&rsquo;ve been using master for 15 years, 
 <hr>
 <h2 id="build-tools">Build Tools</h2>
 <p>Anyway, let&rsquo;s transition into the build tools. The AUR uses a build script called <code>makepkg</code> to automate the building of packages. If you&rsquo;re on an Arch-based system, you should have this provided through pacman by default. As I hinted at previously. the only two files essential for building an AUR package are the PKGBUILD script and the .SRCINFO. When makepkg is run, it searches the current directory for the PKGBUILD script to build and install the package. To get started, I&rsquo;d recommend checking out the example PKBUILDs located in <code>/usr/share/pacman/</code> and using <a href="https://wiki.archlinux.org/title/PKGBUILD">this</a> guide for more detail. Here&rsquo;s my PKGBUILD, which is a much more paired-down version of the examples:</p>
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#a8a8a8"># Maintainer: nshan651 &lt;nshan651@aur.archlinux.org&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#a8a8a8"># Maintainer: nshan651 &lt;nshan651@aur.archlinux.org&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#00d3d0">pkgname</span><span style="color:#00d3d0">=</span>excite-cli
 </span></span><span style="display:flex;"><span><span style="color:#a8a8a8"># Note that version cannot have any hyphens &#39;-&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#00d3d0">pkgver</span><span style="color:#00d3d0">=</span>v0.2.0_alpha 
@@ -284,7 +285,7 @@ Additional comments about closing:  We&rsquo;ve been using master for 15 years, 
 
 
 <footer> 
-	<a href="http://nshan.is/">http://nshan.is/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+	<a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
 </footer>
 
 

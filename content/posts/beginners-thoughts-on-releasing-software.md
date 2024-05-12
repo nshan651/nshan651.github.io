@@ -43,7 +43,7 @@ Ummm, alright then, seems a little dogmatic. Typing two fewer letters to switch 
 
 Anyway, let's transition into the build tools. The AUR uses a build script called `makepkg` to automate the building of packages. If you're on an Arch-based system, you should have this provided through pacman by default. As I hinted at previously. the only two files essential for building an AUR package are the PKGBUILD script and the .SRCINFO. When makepkg is run, it searches the current directory for the PKGBUILD script to build and install the package. To get started, I'd recommend checking out the example PKBUILDs located in `/usr/share/pacman/` and using [this](https://wiki.archlinux.org/title/PKGBUILD) guide for more detail. Here's my PKGBUILD, which is a much more paired-down version of the examples:
 
-```sh
+```bash
 # Maintainer: nshan651 <nshan651@aur.archlinux.org>
 pkgname=excite-cli
 # Note that version cannot have any hyphens '-'
@@ -75,7 +75,6 @@ package() {
     make DESTDIR="$pkgdir/" install
 }
 ```
-
 The first thing that's really important to have is the maintainer(s) listed at the top as a comment with their username and email (Make sure you mask your email to protect against spam). After carefully adding the settings for our package (as well as any additional options you need), we can write functions to build and package the software. 
 
 We're retrieving, extracting, and then creating a working copy of `$source`, so we need to first cd into `$pkgname`. From here we simply run `make` and any additional scripts. In the package() function, we again need to enter our working git repo, but this time we will need to enter a [fakeroot](https://www.unix.com/man-page/linux/1/fakeroot/) environment to install the packages. Your build scripts will be fairly subjective to your project structure, but I'll show my Makefile as an example:

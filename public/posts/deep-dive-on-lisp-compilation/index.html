@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8">
+	<meta name="description" content="Phases of a Common Lisp Program&rsquo;s Execution CHATGPT-GENERATED!!! 1. Read-time: This stage is known as &#34;read-time&#34; because it involves the process of reading textual representations of Lisp code and converting them into Lisp data structures. The reader is responsible for this stage. 2. Compile-time: This stage is called &#34;compile-time&#34; because it involves the compilation of Lisp code into low-level machine code or intermediate representations suitable for execution by the Lisp runtime system.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="http://localhost:1313/">
+	<link rel='alternate' type='application/rss+xml' title="nshan.is RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/site.css'>
+	<link rel='stylesheet' type='text/css' href='/syntax.css'>
+	
+        <link rel="icon" href="/favicon.ico">
+	<title>Deep Dive on Lisp Compilation | nshan.is</title>
+</head>
+<body>
+<main>
+        <div class="site-masthead">
+            <div class="container">
+                <nav class="nav">
+                    <a class="nav-link" href="/">Home</a> 
+                    <a class="nav-link" href="/contact">Contact</a> 
+                    <a class="nav-link" href="/posts/">Blog</a> 
+                    <a class="nav-link" href="/library/">Library</a> 
+                    <a class="nav-link" href="/projects/">Projects</a> 
+                    <a class="nav-link" href="/discover/">Discover</a>
+                    <a class="nav-link" href="/about/">About</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+<div class="container">
+<div class="site-post">
+<div id="content">
+
+
+<header class="site-header">
+    <div class="container">
+        
+            <h1> Deep Dive on Lisp Compilation </h1>
+        
+        </div>
+</header>
+
+<article>
+
+<h4 id="phases-of-a-common-lisp-programs-execution">Phases of a Common Lisp Program&rsquo;s Execution</h4>
+<ul>
+<li><em>CHATGPT-GENERATED!!!</em></li>
+</ul>
+<pre tabindex="0"><code class="language-example" data-lang="example">1. Read-time: This stage is known as &#34;read-time&#34; because it involves the process of reading textual representations of Lisp code and converting them into Lisp data structures. The reader is responsible for this stage.
+
+2. Compile-time: This stage is called &#34;compile-time&#34; because it involves the compilation of Lisp code into low-level machine code or intermediate representations suitable for execution by the Lisp runtime system. The Lisp compiler handles this stage.
+
+3. Load-time: This stage is known as &#34;load-time&#34; because it refers to the process of loading compiled code or Lisp source code into the Lisp environment. This is typically done using functions like LOAD.
+
+4. Run-time: This stage is called &#34;run-time&#34; because it refers to the time during which the program is executed. The Lisp runtime system manages this stage, controlling the execution flow and providing access to built-in functions and data structures.
+
+5. Debug-time: This stage is known as &#34;debug-time&#34; because it refers to the time during which programmers debug their code to identify and fix errors. Common Lisp provides various debugging tools and techniques to assist programmers during this stage.
+</code></pre><h4 id="fasl-vs-images">FASL vs Images</h4>
+<ul>
+<li>Common Lisp compiles down to FASL (which stands for &ldquo;fast loading&rdquo;).</li>
+<li><code>save-lisp-and-die</code> with or w/o <code>:executable t</code> for either images or executables</li>
+</ul>
+<h4 id="different-ways-of-compiling-httpslispcookbookgithubiocl-cookbookscriptinghtml">Different ways of compiling: <a href="https://lispcookbook.github.io/cl-cookbook/scripting.html">https://lispcookbook.github.io/cl-cookbook/scripting.html</a></h4>
+<ul>
+<li>SBCL:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#00d3d0">sb-ext:save-lisp-and-die</span> <span style="color:#00bcff">#P&#34;path/name-of-executable&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#79a8ff">:toplevel</span> <span style="color:#feacd0">#&#39;</span><span style="color:#00d3d0">my-app:main-function</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#79a8ff">:executable</span> t)
+</span></span></code></pre></div><ul>
+<li>ASDF:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; *.asd</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-operation</span> <span style="color:#79a8ff">&#34;program-op&#34;</span> <span style="color:#a8a8a8">;; leave as is</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-pathname</span> <span style="color:#79a8ff">&#34;&lt;here your final binary name&gt;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:entry-point</span> <span style="color:#79a8ff">&#34;&lt;my-package:main-function&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; Makefile</span>
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">$</span>(<span style="color:#00d3d0">LISP</span>) <span style="color:#00d3d0">--load</span> <span style="color:#00d3d0">my-app.asd</span> \
+</span></span><span style="display:flex;"><span>	<span style="color:#00d3d0">--eval</span> <span style="color:#00d3d0">&#39;</span>(<span style="color:#00d3d0">ql:quickload</span> <span style="color:#79a8ff">:my-app</span>)<span style="color:#00d3d0">&#39;</span> \
+</span></span><span style="display:flex;"><span>	<span style="color:#00d3d0">--eval</span> <span style="color:#00d3d0">&#39;</span>(<span style="color:#00d3d0">asdf:make</span> <span style="color:#79a8ff">:my-app</span>)<span style="color:#00d3d0">&#39;</span> \
+</span></span><span style="display:flex;"><span>	<span style="color:#00d3d0">--eval</span> <span style="color:#00d3d0">&#39;</span>(<span style="color:#00d3d0">quit</span>)<span style="color:#00d3d0">&#39;</span>
+</span></span></code></pre></div><h4 id="enhancements">Enhancements</h4>
+<ul>
+<li>Deploy (ship foreign library deps):
+<ul>
+<li>Occasionally, your project or its dependencies may rely on dynamic C/C++ shared libraries that are specific to your machine, but which may not be present on a different filesystem. This is where Deploy comes in. Deploy auto-discovers foreign library dependencies and places them in your project&rsquo;s <code>bin/</code> directory.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#79a8ff">:defsystem-depends-on</span> (<span style="color:#79a8ff">:deploy</span>)  <span style="color:#a8a8a8">;; (ql:quickload &#34;deploy&#34;) before</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-operation</span> <span style="color:#79a8ff">&#34;deploy-op&#34;</span>     <span style="color:#a8a8a8">;; instead of &#34;program-op&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-pathname</span> <span style="color:#79a8ff">&#34;my-application-name&#34;</span>  <span style="color:#a8a8a8">;; doesn&#39;t change</span>
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:entry-point</span> <span style="color:#79a8ff">&#34;my-package:my-start-function&#34;</span>  <span style="color:#a8a8a8">;; doesn&#39;t change</span>
+</span></span></code></pre></div><ul>
+<li>Core compression to reduce binary size (SBCL only)
+<ul>
+<li>CL binaries are quite large. To greatly reduce the size at virtually no cost to the startup, add the following definition to your asd.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; Check if this is available in a SBCL repl.</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#feacd0">find</span> <span style="color:#79a8ff">:sb-core-compression</span> *features*)
+</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:SB-CORE-COMPRESSION</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; *.asdf</span>
+</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">;;; Add this anywhere outside of the defsystem.</span>
+</span></span><span style="display:flex;"><span><span style="color:#00d3d0">#+</span><span style="color:#00d3d0">sb-core-compression</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#f78fe7">defmethod</span> <span style="color:#00d3d0">asdf:perform</span> ((<span style="color:#00d3d0">o</span> <span style="color:#00d3d0">asdf:image-op</span>) (<span style="color:#00d3d0">c</span> <span style="color:#00d3d0">asdf:system</span>))
+</span></span><span style="display:flex;"><span>  (<span style="color:#00d3d0">uiop:dump-image</span> (<span style="color:#00d3d0">asdf:output-file</span> <span style="color:#00d3d0">o</span> <span style="color:#00d3d0">c</span>)
+</span></span><span style="display:flex;"><span>                   <span style="color:#79a8ff">:executable</span> t
+</span></span><span style="display:flex;"><span>                   <span style="color:#79a8ff">:compression</span> t))
+</span></span></code></pre></div><ul>
+<li>Deploy and the core compression technique can be combined to create small, portable binaries.</li>
+</ul>
+<h2 id="notes">NOTES</h2>
+<ul>
+<li>Cannot save an image with multiple threads running:
+<ul>
+<li><a href="http://www.sbcl.org/manual/#Saving-a-Core-Image">http://www.sbcl.org/manual/#Saving-a-Core-Image</a></li>
+<li><a href="https://stackoverflow.com/questions/47888877/sbcl-building-a-standalone-executable">https://stackoverflow.com/questions/47888877/sbcl-building-a-standalone-executable</a></li>
+</ul>
+</li>
+<li>FASL files:
+<ul>
+<li><a href="https://www.common-lisp.com/support/documentation/current/compiling.html#22-fasl-files">https://www.common-lisp.com/support/documentation/current/compiling.html#22-fasl-files</a></li>
+</ul>
+</li>
+<li>CL cookbook on scripting and binaries:
+<ul>
+<li><a href="https://lispcookbook.github.io/cl-cookbook/scripting.html">https://lispcookbook.github.io/cl-cookbook/scripting.html</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+</article>
+
+</div>
+</div>
+</div>
+
+
+<footer> 
+	<a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+
+</main>
+</body>
+</html>
