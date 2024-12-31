@@ -1,153 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
 	<meta charset="utf-8">
-	<meta name="description" content="Phases of a Common Lisp Program&rsquo;s Execution CHATGPT-GENERATED!!! 1. Read-time: This stage is known as &#34;read-time&#34; because it involves the process of reading textual representations of Lisp code and converting them into Lisp data structures. The reader is responsible for this stage. 2. Compile-time: This stage is called &#34;compile-time&#34; because it involves the compilation of Lisp code into low-level machine code or intermediate representations suitable for execution by the Lisp runtime system.">
+	<meta name="description" content="Phases of a Common Lisp Program&rsquo;s Execution
+
+CHATGPT-GENERATED!!!
+
+1. Read-time: This stage is known as &#34;read-time&#34; because it involves the process of reading textual representations of Lisp code and converting them into Lisp data structures. The reader is responsible for this stage.
+
+2. Compile-time: This stage is called &#34;compile-time&#34; because it involves the compilation of Lisp code into low-level machine code or intermediate representations suitable for execution by the Lisp runtime system. The Lisp compiler handles this stage.
+
+3. Load-time: This stage is known as &#34;load-time&#34; because it refers to the process of loading compiled code or Lisp source code into the Lisp environment. This is typically done using functions like LOAD.
+
+4. Run-time: This stage is called &#34;run-time&#34; because it refers to the time during which the program is executed. The Lisp runtime system manages this stage, controlling the execution flow and providing access to built-in functions and data structures.
+
+5. Debug-time: This stage is known as &#34;debug-time&#34; because it refers to the time during which programmers debug their code to identify and fix errors. Common Lisp provides various debugging tools and techniques to assist programmers during this stage.
+FASL vs Images
+
+Common Lisp compiles down to FASL (which stands for &ldquo;fast loading&rdquo;).
+save-lisp-and-die with or w/o :executable t for either images or executables
+
+Different ways of compiling: https://lispcookbook.github.io/cl-cookbook/scripting.html
+
+SBCL:
+
+
+
+1
+2
+3
+
+
+(sb-ext:save-lisp-and-die #P&#34;path/name-of-executable&#34;
+	:toplevel #&#39;my-app:main-function
+	:executable t)
+
+
+
+ASDF:
+
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+
+
+;;;; *.asd
+:build-operation &#34;program-op&#34; ;; leave as is
+:build-pathname &#34;&lt;here your final binary name&gt;&#34;
+:entry-point &#34;&lt;my-package:main-function&gt;&#34;
+
+;;;; Makefile
+$(LISP) --load my-app.asd \
+	--eval &#39;(ql:quickload :my-app)&#39; \
+	--eval &#39;(asdf:make :my-app)&#39; \
+	--eval &#39;(quit)&#39;
+
+
+Enhancements
+
+Deploy (ship foreign library deps):
+
+Occasionally, your project or its dependencies may rely on dynamic C/C&#43;&#43; shared libraries that are specific to your machine, but which may not be present on a different filesystem. This is where Deploy comes in. Deploy auto-discovers foreign library dependencies and places them in your project&rsquo;s bin/ directory.
+
+
+
+
+
+1
+2
+3
+4
+
+
+:defsystem-depends-on (:deploy)  ;; (ql:quickload &#34;deploy&#34;) before
+:build-operation &#34;deploy-op&#34;     ;; instead of &#34;program-op&#34;
+:build-pathname &#34;my-application-name&#34;  ;; doesn&#39;t change
+:entry-point &#34;my-package:my-start-function&#34;  ;; doesn&#39;t change
+
+
+
+Core compression to reduce binary size (SBCL only)
+
+CL binaries are quite large. To greatly reduce the size at virtually no cost to the startup, add the following definition to your asd.
+
+
+
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+
+
+;;;; Check if this is available in a SBCL repl.
+(find :sb-core-compression *features*)
+:SB-CORE-COMPRESSION
+
+;;;; *.asdf
+;;; Add this anywhere outside of the defsystem.
+#&#43;sb-core-compression
+(defmethod asdf:perform ((o asdf:image-op) (c asdf:system))
+  (uiop:dump-image (asdf:output-file o c)
+                   :executable t
+                   :compression t))
+
+
+
+Deploy and the core compression technique can be combined to create small, portable binaries.
+
+NOTES
+
+Cannot save an image with multiple threads running:
+
+http://www.sbcl.org/manual/#Saving-a-Core-Image
+https://stackoverflow.com/questions/47888877/sbcl-building-a-standalone-executable
+
+
+FASL files:
+
+https://www.common-lisp.com/support/documentation/current/compiling.html#22-fasl-files
+
+
+CL cookbook on scripting and binaries:
+
+https://lispcookbook.github.io/cl-cookbook/scripting.html
+
+
+">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="http://localhost:1313/">
+	<link rel="canonical" href="https://nshan651.github.io/">
 	<link rel='alternate' type='application/rss+xml' title="nshan.is RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/site.css'>
 	<link rel='stylesheet' type='text/css' href='/syntax.css'>
+	<link rel='stylesheet' type='text/css' href='/gallery.css'>
 	
         <link rel="icon" href="/favicon.ico">
 	<title>Deep Dive on Lisp Compilation | nshan.is</title>
 </head>
 <body>
 <main>
-        <div class="site-masthead">
-            <div class="container">
-                <nav class="nav">
-                    <a class="nav-link" href="/">Home</a> 
-                    <a class="nav-link" href="/contact">Contact</a> 
-                    <a class="nav-link" href="/posts/">Blog</a> 
-                    <a class="nav-link" href="/library/">Library</a> 
-                    <a class="nav-link" href="/projects/">Projects</a> 
-                    <a class="nav-link" href="/discover/">Discover</a>
-                    <a class="nav-link" href="/about/">About</a>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+<div class="site-masthead">
+    <div class="container">
+	<nav class="nav">
+	    <a class="nav-link" href="/">Home</a> 
+	    <a class="nav-link" href="/contact">Contact</a> 
+	    <a class="nav-link" href="/posts/">Blog</a> 
+	    <a class="nav-link" href="/library/">Library</a> 
+	    <a class="nav-link" href="/photography/">Photography</a> 
+	    <a class="nav-link" href="/projects/">Projects</a> 
+	    <a class="nav-link" href="/discover/">Discover</a>
+	    <a class="nav-link" href="/about/">About</a>
+	    </ul>
+	</nav>
+    </div>
+</div>
 
 
 <div class="container">
 <div class="site-post">
 <div id="content">
 
-
 <header class="site-header">
     <div class="container">
-        
-            <h1> Deep Dive on Lisp Compilation </h1>
-        
-        </div>
+        <h1> Deep Dive on Lisp Compilation </h1>
+    </div>
 </header>
 
 <article>
@@ -174,23 +208,48 @@
 <ul>
 <li>SBCL:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#00d3d0">sb-ext:save-lisp-and-die</span> <span style="color:#00bcff">#P&#34;path/name-of-executable&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#79a8ff">:toplevel</span> <span style="color:#feacd0">#&#39;</span><span style="color:#00d3d0">my-app:main-function</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#79a8ff">:executable</span> t)
-</span></span></code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">sb-ext:save-lisp-and-die</span> <span class="l">#P&#34;path/name-of-executable&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="ss">:toplevel</span> <span class="nf">#&#39;</span><span class="nv">my-app:main-function</span>
+</span></span><span class="line"><span class="cl">	<span class="ss">:executable</span> <span class="no">t</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>ASDF:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; *.asd</span>
-</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-operation</span> <span style="color:#79a8ff">&#34;program-op&#34;</span> <span style="color:#a8a8a8">;; leave as is</span>
-</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-pathname</span> <span style="color:#79a8ff">&#34;&lt;here your final binary name&gt;&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:entry-point</span> <span style="color:#79a8ff">&#34;&lt;my-package:main-function&gt;&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; Makefile</span>
-</span></span><span style="display:flex;"><span><span style="color:#00d3d0">$</span>(<span style="color:#00d3d0">LISP</span>) <span style="color:#00d3d0">--load</span> <span style="color:#00d3d0">my-app.asd</span> \
-</span></span><span style="display:flex;"><span>	<span style="color:#00d3d0">--eval</span> <span style="color:#00d3d0">&#39;</span>(<span style="color:#00d3d0">ql:quickload</span> <span style="color:#79a8ff">:my-app</span>)<span style="color:#00d3d0">&#39;</span> \
-</span></span><span style="display:flex;"><span>	<span style="color:#00d3d0">--eval</span> <span style="color:#00d3d0">&#39;</span>(<span style="color:#00d3d0">asdf:make</span> <span style="color:#79a8ff">:my-app</span>)<span style="color:#00d3d0">&#39;</span> \
-</span></span><span style="display:flex;"><span>	<span style="color:#00d3d0">--eval</span> <span style="color:#00d3d0">&#39;</span>(<span style="color:#00d3d0">quit</span>)<span style="color:#00d3d0">&#39;</span>
-</span></span></code></pre></div><h4 id="enhancements">Enhancements</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="line"><span class="cl"><span class="c1">;;;; *.asd</span>
+</span></span><span class="line"><span class="cl"><span class="ss">:build-operation</span> <span class="s">&#34;program-op&#34;</span> <span class="c1">;; leave as is</span>
+</span></span><span class="line"><span class="cl"><span class="ss">:build-pathname</span> <span class="s">&#34;&lt;here your final binary name&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="ss">:entry-point</span> <span class="s">&#34;&lt;my-package:main-function&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;;;; Makefile</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$</span><span class="p">(</span><span class="nv">LISP</span><span class="p">)</span> <span class="nv">--load</span> <span class="nv">my-app.asd</span> <span class="err">\</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">--eval</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">ql:quickload</span> <span class="ss">:my-app</span><span class="p">)</span><span class="o">&#39;</span> <span class="err">\</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">--eval</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">asdf:make</span> <span class="ss">:my-app</span><span class="p">)</span><span class="o">&#39;</span> <span class="err">\</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">--eval</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">quit</span><span class="p">)</span><span class="o">&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="enhancements">Enhancements</h4>
 <ul>
 <li>Deploy (ship foreign library deps):
 <ul>
@@ -198,29 +257,56 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#79a8ff">:defsystem-depends-on</span> (<span style="color:#79a8ff">:deploy</span>)  <span style="color:#a8a8a8">;; (ql:quickload &#34;deploy&#34;) before</span>
-</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-operation</span> <span style="color:#79a8ff">&#34;deploy-op&#34;</span>     <span style="color:#a8a8a8">;; instead of &#34;program-op&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:build-pathname</span> <span style="color:#79a8ff">&#34;my-application-name&#34;</span>  <span style="color:#a8a8a8">;; doesn&#39;t change</span>
-</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:entry-point</span> <span style="color:#79a8ff">&#34;my-package:my-start-function&#34;</span>  <span style="color:#a8a8a8">;; doesn&#39;t change</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="line"><span class="cl"><span class="ss">:defsystem-depends-on</span> <span class="p">(</span><span class="ss">:deploy</span><span class="p">)</span>  <span class="c1">;; (ql:quickload &#34;deploy&#34;) before</span>
+</span></span><span class="line"><span class="cl"><span class="ss">:build-operation</span> <span class="s">&#34;deploy-op&#34;</span>     <span class="c1">;; instead of &#34;program-op&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="ss">:build-pathname</span> <span class="s">&#34;my-application-name&#34;</span>  <span class="c1">;; doesn&#39;t change</span>
+</span></span><span class="line"><span class="cl"><span class="ss">:entry-point</span> <span class="s">&#34;my-package:my-start-function&#34;</span>  <span class="c1">;; doesn&#39;t change</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>Core compression to reduce binary size (SBCL only)
 <ul>
 <li>CL binaries are quite large. To greatly reduce the size at virtually no cost to the startup, add the following definition to your asd.</li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; Check if this is available in a SBCL repl.</span>
-</span></span><span style="display:flex;"><span>(<span style="color:#feacd0">find</span> <span style="color:#79a8ff">:sb-core-compression</span> *features*)
-</span></span><span style="display:flex;"><span><span style="color:#79a8ff">:SB-CORE-COMPRESSION</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">;;;; *.asdf</span>
-</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">;;; Add this anywhere outside of the defsystem.</span>
-</span></span><span style="display:flex;"><span><span style="color:#00d3d0">#+</span><span style="color:#00d3d0">sb-core-compression</span>
-</span></span><span style="display:flex;"><span>(<span style="color:#f78fe7">defmethod</span> <span style="color:#00d3d0">asdf:perform</span> ((<span style="color:#00d3d0">o</span> <span style="color:#00d3d0">asdf:image-op</span>) (<span style="color:#00d3d0">c</span> <span style="color:#00d3d0">asdf:system</span>))
-</span></span><span style="display:flex;"><span>  (<span style="color:#00d3d0">uiop:dump-image</span> (<span style="color:#00d3d0">asdf:output-file</span> <span style="color:#00d3d0">o</span> <span style="color:#00d3d0">c</span>)
-</span></span><span style="display:flex;"><span>                   <span style="color:#79a8ff">:executable</span> t
-</span></span><span style="display:flex;"><span>                   <span style="color:#79a8ff">:compression</span> t))
-</span></span></code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="line"><span class="cl"><span class="c1">;;;; Check if this is available in a SBCL repl.</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nf">find</span> <span class="ss">:sb-core-compression</span> <span class="vg">*features*</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="ss">:SB-CORE-COMPRESSION</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;;;; *.asdf</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;;; Add this anywhere outside of the defsystem.</span>
+</span></span><span class="line"><span class="cl"><span class="o">#+</span><span class="nv">sb-core-compression</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defmethod</span> <span class="nv">asdf:perform</span> <span class="p">((</span><span class="nv">o</span> <span class="nv">asdf:image-op</span><span class="p">)</span> <span class="p">(</span><span class="nv">c</span> <span class="nv">asdf:system</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">uiop:dump-image</span> <span class="p">(</span><span class="nv">asdf:output-file</span> <span class="nv">o</span> <span class="nv">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                   <span class="ss">:executable</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">                   <span class="ss">:compression</span> <span class="no">t</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>Deploy and the core compression technique can be combined to create small, portable binaries.</li>
 </ul>
 <h2 id="notes">NOTES</h2>
@@ -253,7 +339,7 @@
 
 
 <footer> 
-	<a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+	<a href="https://nshan651.github.io/">https://nshan651.github.io/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
 </footer>
 
 

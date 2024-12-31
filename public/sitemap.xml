@@ -2,87 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/content/posts/test/</loc>
-    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+    <loc>https://nshan651.github.io/photography/zion/</loc>
+    <lastmod>2024-10-24T20:22:01-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/test/</loc>
-    <lastmod>2024-04-17T16:26:47-05:00</lastmod>
+    <loc>https://nshan651.github.io/photography/</loc>
+    <lastmod>2024-10-24T20:05:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/deep-dive-on-lisp-compilation/</loc>
+    <loc>https://nshan651.github.io/posts/deep-dive-on-lisp-compilation/</loc>
     <lastmod>2024-04-22T17:25:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://nshan651.github.io/posts/</loc>
     <lastmod>2024-04-22T17:25:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tour-of-common-lisp-build-ecosystem/</loc>
+    <loc>https://nshan651.github.io/posts/tour-of-common-lisp-build-ecosystem/</loc>
     <lastmod>2024-04-12T11:22:34-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/alla-prima/</loc>
+    <loc>https://nshan651.github.io/posts/alla-prima/</loc>
     <lastmod>2023-10-21T16:57:42-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/burden-of-social-flexibility/</loc>
+    <loc>https://nshan651.github.io/posts/burden-of-social-flexibility/</loc>
     <lastmod>2023-10-21T15:21:40-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/recycling/</loc>
+    <loc>https://nshan651.github.io/posts/recycling/</loc>
     <lastmod>2023-09-15T13:40:57-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/stigmatization-of-nudity/</loc>
+    <loc>https://nshan651.github.io/posts/stigmatization-of-nudity/</loc>
     <lastmod>2023-09-02T13:02:54-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://nshan651.github.io/projects/</loc>
     <lastmod>2023-08-10T17:56:43-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://nshan651.github.io/about/</loc>
     <lastmod>2023-08-10T17:03:14-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://nshan651.github.io/contact/</loc>
     <lastmod>2023-08-10T17:00:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/use-old-tech/</loc>
+    <loc>https://nshan651.github.io/posts/use-old-tech/</loc>
     <lastmod>2023-04-27T15:21:36-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/worst-code/</loc>
+    <loc>https://nshan651.github.io/posts/worst-code/</loc>
     <lastmod>2023-03-05T17:16:20-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/yt-dlp/</loc>
+    <loc>https://nshan651.github.io/posts/yt-dlp/</loc>
     <lastmod>2023-01-02T00:20:16-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/discover/</loc>
+    <loc>https://nshan651.github.io/discover/</loc>
     <lastmod>2022-12-22T22:29:22-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/beginners-thoughts-on-releasing-software/</loc>
+    <loc>https://nshan651.github.io/posts/beginners-thoughts-on-releasing-software/</loc>
     <lastmod>2022-12-15T00:20:16-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/library/</loc>
+    <loc>https://nshan651.github.io/library/</loc>
     <lastmod>2022-12-10T11:14:14-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://nshan651.github.io/</loc>
     <lastmod>2022-11-09T22:05:11-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/how-do-you-eat-an-elephant/</loc>
+    <loc>https://nshan651.github.io/posts/how-do-you-eat-an-elephant/</loc>
     <lastmod>2022-10-15T00:25:35-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/be-a-producer/</loc>
+    <loc>https://nshan651.github.io/posts/be-a-producer/</loc>
     <lastmod>2022-05-06T00:20:16-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+    <loc>https://nshan651.github.io/posts/test/</loc>
   </url><url>
-    <loc>http://localhost:1313/content/</loc>
-    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
+    <loc>https://nshan651.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/emacs/</loc>
-    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/org/</loc>
-    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-04-17T16:29:08-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/test/</loc>
+    <loc>https://nshan651.github.io/tags/</loc>
   </url>
 </urlset>

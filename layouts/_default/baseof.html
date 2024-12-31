@@ -12,6 +12,7 @@
 	<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/site.css'>
 	<link rel='stylesheet' type='text/css' href='/syntax.css'>
+	<link rel='stylesheet' type='text/css' href='/gallery.css'>
 	{{ with .Site.Params.favicon }}
         <link rel="icon" href="{{ . }}">
 	{{ end -}}
@@ -25,16 +26,10 @@
 <div class="site-post">
 <div id="content">
 
-<!-- <header>
-    <h1 id="tag_{{ .Title }}"> {{ block "title" . }}{{ end }}</h1>
-</header> 
--->
 <header class="site-header">
     <div class="container">
-        <!-- <div class="site-title"> -->
-            <h1> {{ block "title" . }}{{ end }} </h1>
-        <!-- </div> -->
-        </div>
+        <h1> {{ block "title" . }}{{ end }} </h1>
+    </div>
 </header>
 
 <article>
