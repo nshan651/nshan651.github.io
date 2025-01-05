@@ -7,16 +7,9 @@ draft: false
 Photos from my trip to Zion National Park.
 
 {{< photo-grid 
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
-    "zion.jpg"
+    "IMG_9375.png"
+    "IMG_9388.png"
+    "IMG_9391.png"
+    "IMG_9401.png"
+    "IMG_9406.png"
 >}}
