@@ -5,7 +5,7 @@
 	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{{ if isset .Params "tags" }}
-        <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+	       <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
 	{{ end -}}
 	<meta name="robots" content="index, follow">
 	<link rel="canonical" href="{{ .Site.BaseURL }}">
@@ -45,11 +45,33 @@
 </div>
 
 {{ block "footer" . }}
-<footer> 
-	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
-	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="site-footer-line">
+          <a href="/privacy-policy/">Privacy Policy</a> · 
+          <a href="/credits/">Credits</a> · 
+          <a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+          <a href="/index.xml"><img src="/xmr.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+          <a href="/index.xml"><img src="/btc.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+        </div>
+        <div class="site-footer-line">
+          © 2019-2025 · nshan651.duckdns.org
+        </div>
+      </div>
+      <div class="column align-right">
+        <p>
+        <a href="https://github.com/nshan651/nshan651.github.io">
+          <img src="/git.png" style="max-height:2em" alt="Contribute on GitHub">
+        </a>
+        </p>
+      </div>
+    </div>
+  </div>
 </footer>
 {{ end }}
+
 
 </main>
 </body>

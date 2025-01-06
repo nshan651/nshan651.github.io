@@ -106,7 +106,7 @@ body {
   font-size: 1.3rem;
   line-height: 1.5;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #111111;
 }
 
 p {
@@ -198,19 +198,19 @@ kbd {
 
 pre {
   font-family: "JetBrains Mono", monospace;
-  background-color: #232635;
-  padding: 1em;
+  /*background-color: #232635;*/
+padding: 1em;
   overflow-x: scroll;
 }
 
-code {
-  color: #c3e88d;
-}
+/*code {*/
+/*  color: #c3e88d;*/
+/*}*/
 
 pre,
 code {
   font-family: "JetBrains Mono", monospace;
-  font-weight: 200;
+  /*font-weight: 200;*/
   font-size: 1rem;
 }
 
@@ -338,8 +338,7 @@ strong {
   margin-top: 1rem;
   color: #cdddeb;
   font-size: 1rem;
-  background-color: #232635;
-  border-top: 0.05rem solid #c3e88d;
+  border-top: 0.05rem solid #dfaf7a;
 }
 
 .site-footer p:last-child {
