@@ -1,8 +1,8 @@
 <ul class="photo-grid">
     {{ range .Params }}
         <li>
-            <a href="{{ . }}">
-                <img src="{{ . }}" alt="Gallery Image">
+            <a href="photos/{{ . }}">
+                <img src="thumbnails/{{ . }}" alt="Gallery Image">
             </a>
         </li>
     {{ end }}
