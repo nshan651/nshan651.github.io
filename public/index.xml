@@ -11,6 +11,27 @@
 	
 	
 	<item>
+		<title>An Algorithm Free Life</title>
+		<link>https://nshan651.duckdns.org/posts/an-algorithm-free-life/</link>
+		<pubDate>Thu, 06 Feb 2025 12:17:57 -0600</pubDate>
+		
+		<guid>https://nshan651.duckdns.org/posts/an-algorithm-free-life/</guid>
+		<description>&lt;p&gt;Over the past two years or so, I have&lt;/p&gt;
+&lt;h1 id=&#34;outline&#34;&gt;Outline&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Why algorithms are problematic&lt;/li&gt;
+&lt;li&gt;Taking back control of my attention&lt;/li&gt;
+&lt;li&gt;What I use&lt;/li&gt;
+&lt;li&gt;FreshRSS for syncing across devices&lt;/li&gt;
+&lt;li&gt;On my iPhone:&lt;/li&gt;
+&lt;li&gt;NetNewsWire app, sync the OPAML from my server&lt;/li&gt;
+&lt;li&gt;Open all links (including YT videos!) in a firefox focus tab&lt;/li&gt;
+&lt;li&gt;The great thing about this is that I have it setup to be signed out and with blocked cookies, so the recommendations are completely unappealing.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Zion</title>
 		<link>https://nshan651.duckdns.org/photography/zion/</link>
 		<pubDate>Thu, 24 Oct 2024 20:22:01 -0500</pubDate>
@@ -387,20 +408,6 @@
 	</item>
 	
 	<item>
-		<title>The Stigmatization of Nudity</title>
-		<link>https://nshan651.duckdns.org/posts/stigmatization-of-nudity/</link>
-		<pubDate>Sat, 02 Sep 2023 13:02:54 -0500</pubDate>
-		
-		<guid>https://nshan651.duckdns.org/posts/stigmatization-of-nudity/</guid>
-		<description>&lt;p&gt;During the summer of 2022, I had the pleasure of spending several nights at the Bolita rainforest hostel in Costa Rica. Located in the remote Southwest Osa peninsula, the hostel is entirely off-grid. Getting there proved to be quite difficult, involving a long hike through the rainforest with a river we had to cross. We were there during the rainy season, which meant that it was pretty much impossible to cross the river after around noon or so, as their would be a consistent downpour for the next several hours and the river would flood.&lt;/p&gt;
-&lt;p&gt;Besides its location, the thing that makes Bolita unique is that it is a naturist, or nudist-friendly eco lodge. I was aware of this fact and was comfortable with the idea before I arrived, yet I still felt a little surprised when I was greeted by two volunteers completely in the nude.&lt;/p&gt;
-&lt;p&gt;As one of the workers began showing us around, my initial  astonishment began to wear off. I thought of a piece of advice often given for public speaking, &amp;ldquo;just picture them naked,&amp;rdquo; and it began to make a lot more sense. Nakedness is a position of vulnerability. It feels like an admission of trust, akin to open palms, smiling with your teeth bared, eye contact, or other kinds of body language that makes one seem approachable.&lt;/p&gt;
-&lt;p&gt;It didn&amp;rsquo;t take long for me to totally forget about the presence or absence of clothing. I began to wonder why, in such a supposedly progressive society, Westerners are still so sensitive to nudity. The first, and most obvious place to look is our Puritanical and religious roots. Early European colonists brought with them strong moral and religious convictions surrounding modesty and abstinence, and enforced a strict set of norms. This attitude was reflected in both the laws and art of the time and continued through the 19th century. During the 20th century, attitudes toward nudity began to loosen alongside various feminist movements, culminating in 1960s countercultural and sexual revolution, where nudity was associated with freedom and self-expression.&lt;/p&gt;
-&lt;p&gt;Despite the fact that we have become more tolerant toward nudity, there is still a problem: &lt;em&gt;nudity is almost always sexualized&lt;/em&gt;. Depictions of nudity in modern media are almost never incidental or without circumstance.&lt;/p&gt;
-</description>
-	</item>
-	
-	<item>
 		<title>Projects</title>
 		<link>https://nshan651.duckdns.org/projects/</link>
 		<pubDate>Thu, 10 Aug 2023 17:56:43 -0500</pubDate>
@@ -604,8 +611,7 @@ Both are known for their reliability and driver support, as well as their wide a
 &lt;p&gt;Not only is this code actually in production, it&amp;rsquo;s part of the &lt;strong&gt;groovy core library&lt;/strong&gt;. Look, I&amp;rsquo;m not claiming that Groovy&amp;rsquo;s the most popular language out there, but this isn&amp;rsquo;t some random CS Junior&amp;rsquo;s pet project. Netflix, Oracle, Google, IBM, and JPMorgan Chase all use Groovy for one purpose or another. Let that sink in for a second.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s legitimately so bad that the author had to put a comment justifying its ugliness:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;So even though the class is ugly, there are good reason to have this in Groovy, even if the class makes absolutely no sense in normal Java. But it is not used in normal Java, but from the bytecode.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;So even though the class is ugly, there are good reason to have this in Groovy, even if the class makes absolutely no sense in normal Java. But it is not used in normal Java, but from the bytecode.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Okay, I know there is another comment stating that this is an internal class that isn&amp;rsquo;t exposed to the user. I also acknowledge that this is meant to be an optimization aimed at reducing the size of the bytecode. But if you seriously have to write code like this, then there has to be severe foundational problems with the language.&lt;/p&gt;
 &lt;p&gt;Anyway, it keeps going:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;createArray&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arg0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arg1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arg2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arg3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arg4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arg5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arg6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -931,8 +937,7 @@ Both are known for their reliability and driver support, as well as their wide a
 is a jar full of delight.&lt;br&gt;
 Be a connoisseur,&lt;br&gt;
 and taste with caution.&lt;br&gt;
-- Rumi, &lt;em&gt;The Many Wines&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+- Rumi, &lt;em&gt;The Many Wines&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;em&gt;The Many Wines&lt;/em&gt;, by Rumi, is a Sufi poem cautioning others on the perils of pleasure. He compares the world&amp;rsquo;s pleasures to &amp;ldquo;thousands of wines, that can take of our minds.&amp;rdquo; The message is not to completely cut off all desire, but to reduce our interactions with the world to only the things that bring positivity to our lives.&lt;/p&gt;
 &lt;p&gt;Lately I feel like I haven&amp;rsquo;t been a good connoisseur. I&amp;rsquo;ve gotten drunk in my sampling, and I&amp;rsquo;ve stopped making conscious decisions. I need some way to re-empower myself so that I can once again make deliberate choices.&lt;/p&gt;
 &lt;p&gt;My solution is simple: Get off the platform, and consume only the content I want to see. I wrote a Python script using &lt;code&gt;yt-dlp&lt;/code&gt; to download and organize the five most recent videos from the channels that I want to follow. I deleted my YouTube account as well so that there isn&amp;rsquo;t even a possibility to go back to the algorithm.&lt;/p&gt;
@@ -1154,8 +1159,7 @@ Thomas pynchon - is it O.K to be a luddite&lt;/p&gt;
 &lt;p&gt;The second bit that threw me off - the branch you push to the AUR from &lt;strong&gt;must be named &amp;ldquo;master.&amp;rdquo;&lt;/strong&gt; For some reason I didn&amp;rsquo;t realize this until I came across a couple rather political forum posts about why they refuse to change the default branch to main (&lt;a href=&#34;https://bbs.archlinux.org/viewtopic.php?id=257186&#34;&gt;1&lt;/a&gt;,&lt;a href=&#34;https://bugs.archlinux.org/task/72257&#34;&gt;2&lt;/a&gt;). The official reason, given by one of the maintainers, is as follows:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Reason for closing:  Won&amp;rsquo;t implement
-Additional comments about closing:  We&amp;rsquo;ve been using master for 15 years, and we aren&amp;rsquo;t going to support main just because other projects have decided to suggest this as a default.&lt;/p&gt;
-&lt;/blockquote&gt;
+Additional comments about closing:  We&amp;rsquo;ve been using master for 15 years, and we aren&amp;rsquo;t going to support main just because other projects have decided to suggest this as a default.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Ummm, alright then, seems a little dogmatic. Typing two fewer letters to switch branches seems like an improvement to me, but in their defense, it seems like this might not be such a simple change after all. A few of the comments point out that it&amp;rsquo;s baked into the AUR web back-end.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;build-tools&#34;&gt;Build Tools&lt;/h2&gt;
