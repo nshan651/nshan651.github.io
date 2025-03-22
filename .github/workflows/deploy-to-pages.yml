@@ -1,0 +1,46 @@
+name: Deploy to Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build Hugo site
+        run: hugo
+
+      - name: Set up Git
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Commit Hugo build to pages branch
+        run: |
+          # git checkout -b pages
+          # git pull origin main 
+
+          # Delete everything except public and git dirs.
+          # find . -maxdepth 1 ! -name 'public' -exec rm -rf {} \;
+          # find . -maxdepth 1 \
+          # ! \( -name 'public' -o -name '.git' -o -name '.github' \) \
+          # -exec rm -rf {} \;
+          # # Re-name public directory so public sub-dir can also be moved
+          # mv public tmp 
+          # mv tmp/* .
+          # rm -rf tmp
+
+          git add -A 
+          git commit -m "Deploy to pages"
+          git push -f origin main

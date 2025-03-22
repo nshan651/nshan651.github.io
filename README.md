@@ -1,2 +1,3 @@
 # nshan651.github.io
-Personal website
+
+Mirror of [nshan651.duckdns.org](nshan651.duckdns.org).
