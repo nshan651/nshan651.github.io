@@ -7,30 +7,26 @@ I&rsquo;d like to present a practical guide on setting up your first Common Lisp
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
 	<link rel="canonical" href="https://nshan651.duckdns.org/">
-	<link rel='alternate' type='application/rss+xml' title="nshan.is RSS" href='/index.xml'>
+	<link rel='alternate' type='application/rss+xml' title="nshan651 RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/site.css'>
 	<link rel='stylesheet' type='text/css' href='/syntax.css'>
 	<link rel='stylesheet' type='text/css' href='/gallery.css'>
 	
-        <link rel="icon" href="/favicon.ico">
-	<title>The Hitchhiker&#39;s Guide to Building Common Lisp Applications | nshan.is</title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<title>The Hitchhiker&#39;s Guide to Building Common Lisp Applications | nshan651</title>
 </head>
 <body>
 <main>
 <div class="site-masthead">
-    <div class="container">
+    <a class="site-brand" href="/">&#x232c; nshan651</a> 
 	<nav class="nav">
-	    <a class="nav-link" href="/">Home</a> 
-	    <a class="nav-link" href="/contact">Contact</a> 
-	    <a class="nav-link" href="/posts/">Blog</a> 
+	    <a class="nav-link" href="/about/">About</a>
+	    <a class="nav-link" href="/posts/">Blog</a>
 	    <a class="nav-link" href="/library/">Library</a> 
 	    <a class="nav-link" href="/photography/">Photography</a> 
 	    <a class="nav-link" href="/projects/">Projects</a> 
 	    <a class="nav-link" href="/discover/">Discover</a>
-	    <a class="nav-link" href="/about/">About</a>
-	    </ul>
 	</nav>
-    </div>
 </div>
 
 
@@ -39,10 +35,10 @@ I&rsquo;d like to present a practical guide on setting up your first Common Lisp
 <div id="content">
 
 <header class="site-header">
-    <div class="container">
-        <h1> <h1>The Hitchhiker&#39;s Guide to Building Common Lisp Applications</h1>
-<h4>2024-04-12</h4> </h1>
-    </div>
+    <h1> <h1>The Hitchhiker&#39;s Guide to Building Common Lisp Applications</h1>
+<time class="post-date" datetime="2024-04-12T11:22:34-05:00">
+    2024-04-12
+</time> </h1>
 </header>
 
 <article>
@@ -95,12 +91,12 @@ I&rsquo;d like to present a practical guide on setting up your first Common Lisp
 </span></span><span class="line"><span class="cl"><span class="nf">*</span> <span class="p">(</span><span class="nv">ql:add-to-init-file</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nv">I</span> <span class="nv">will</span> <span class="nf">append</span> <span class="k">the</span> <span class="nv">following</span> <span class="nv">lines</span> <span class="nv">to</span> <span class="l">#P&#34;/home/nshan651/.config/sbclrc&#34;</span><span class="err">:</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1">;;; The following lines added by ql:add-to-init-file:</span>
-</span></span><span class="line"><span class="cl">  <span class="o">#-</span><span class="nv">quicklisp</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">quicklisp-init</span> <span class="p">(</span><span class="nf">merge-pathnames</span> <span class="s">&#34;.local/opt/quicklisp/setup.lisp&#34;</span>
-</span></span><span class="line"><span class="cl">                                         <span class="p">(</span><span class="nf">user-homedir-pathname</span><span class="p">))))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">probe-file</span> <span class="nv">quicklisp-init</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">load</span> <span class="nv">quicklisp-init</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;;; The following lines added by ql:add-to-init-file:</span>
+</span></span><span class="line"><span class="cl"><span class="o">#-</span><span class="nv">quicklisp</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">quicklisp-init</span> <span class="p">(</span><span class="nf">merge-pathnames</span> <span class="s">&#34;.local/opt/quicklisp/setup.lisp&#34;</span>
+</span></span><span class="line"><span class="cl">                                        <span class="p">(</span><span class="nf">user-homedir-pathname</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">probe-file</span> <span class="nv">quicklisp-init</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">load</span> <span class="nv">quicklisp-init</span><span class="p">)))</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">Press</span> <span class="nv">Enter</span> <span class="nv">to</span> <span class="nv">continue.</span>
 </span></span></code></pre></div><p>There&rsquo;s one more thing we have to do before we can move on. We need to tell quicklisp where our lisp projects are located. By default, quicklisp will search in <code>./quicklisp/local-projects</code> directory. I like to throw all my coding projects into <code>~/git</code>, so we need to add one more line to our <code>.sbclrc</code>:</p>
@@ -278,7 +274,7 @@ I&rsquo;d like to present a practical guide on setting up your first Common Lisp
           <a href="/index.xml"><img src="/btc.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
         </div>
         <div class="site-footer-line">
-          © 2019-2025 · nshan651.duckdns.org
+          © 2019-2026 · nshan651.duckdns.org/
         </div>
       </div>
       <div class="column align-right">
